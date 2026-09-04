@@ -1,0 +1,55 @@
+AMARA NWOSU
+amara.nwosu@vaultmail.org | (832) 555-0619 | Houston, TX | linkedin.com/in/amaranwosu
+
+SUMMARY
+Business intelligence analyst transitioning into data engineering. Three years of experience writing complex SQL and building reporting infrastructure, now focused on building production data pipelines and scalable data systems.
+
+EXPERIENCE
+
+Business Intelligence Analyst
+Harborline Insurance — Houston, TX
+May 2021 – Present
+
+- Write advanced SQL queries daily for actuarial and underwriting analytics, including complex multi-table joins, recursive CTEs, window functions for policy cohort analysis, and query performance tuning on Snowflake.
+- Built 40+ Tableau dashboards and managed the underlying Snowflake views and materialized tables that power them.
+- Designed and implemented a data quality alerting system using Python that checks for null rates, referential integrity violations, and row count anomalies across 80+ tables, sending automated Slack notifications on failures.
+- Independently learned Apache Airflow and built 5 Airflow DAGs to automate previously manual data refresh processes, reducing analyst time spent on data preparation by approximately 10 hours per week.
+- Proposed and led a project to restructure the claims data model from a flat denormalized schema to a star schema with fact and dimension tables, improving query performance and analytical flexibility.
+
+Reporting Analyst
+Harborline Insurance — Houston, TX
+August 2019 – April 2021
+
+- Produced recurring regulatory reports using SQL Server and SSRS.
+- Automated monthly reporting workflows using Python and pandas.
+- Created and maintained a data dictionary covering 200+ columns across core reporting tables.
+
+Administrative Assistant
+Greenway Community Health — Houston, TX
+June 2017 – July 2019
+
+- Managed scheduling and correspondence for a 12-person clinic.
+- Built Excel-based tracking tools for patient follow-up workflows.
+
+EDUCATION
+
+B.A. Communications
+Prairie View A&M University — Prairie View, TX
+Graduated May 2017
+
+CERTIFICATIONS
+
+- Snowflake SnowPro Core Certification — Earned March 2023
+- Google Professional Data Engineer Certification — Earned November 2023
+
+PROJECTS
+
+- Built a personal project called "policy-data-pipeline" that ingests public Texas Department of Insurance datasets via API, transforms them in Python, loads them into a local PostgreSQL database using SQLAlchemy, and orchestrates the workflow with Airflow. Repository at github.com/anwosu/policy-data-pipeline.
+
+TECHNICAL SKILLS
+
+Languages: Python, SQL, Bash
+Orchestration: Apache Airflow (self-taught, applied in production)
+Cloud/Warehousing: Snowflake, SQL Server
+Tools: Git, Tableau, SSRS, pandas, SQLAlchemy
+Other: Data modeling (star schema), data quality monitoring, regulatory reporting

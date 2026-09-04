@@ -1,0 +1,56 @@
+PRIYA RAMASWAMY
+priya.ramaswamy@lumosmail.com | (512) 555-0381 | Round Rock, TX | linkedin.com/in/priyaramaswamy
+
+SUMMARY
+Experienced data professional with 7+ years in data engineering and analytics. Skilled at designing warehouse architectures and building reliable pipelines for data-intensive organizations. Strong background in SQL optimization and team leadership.
+
+EXPERIENCE
+
+Lead Data Engineer
+Heliograph Inc. — Austin, TX
+September 2021 – Present
+
+- Lead a team of 4 data engineers responsible for the company's entire analytics data infrastructure, including pipeline design, warehouse modeling, and data quality.
+- Designed the Snowflake warehouse architecture from the ground up, implementing a medallion architecture (bronze/silver/gold) with SCD Type 2 tracking on 20+ dimension tables.
+- Built and optimized over 60 Apache Airflow DAGs handling batch ingestion from Salesforce, Stripe, Marketo, and internal PostgreSQL databases.
+- Implemented dbt for SQL-based transformations, establishing a library of 200+ tested and documented dbt models with automated freshness and schema checks.
+- Drove adoption of Terraform for managing Snowflake resources (warehouses, roles, grants), enabling infrastructure-as-code practices.
+- Established team coding standards, PR review guidelines, and on-call runbooks.
+- Partnered with the ML engineering team to design a feature store serving daily and real-time features to 3 production models.
+
+Senior Data Engineer
+Oakmont Data Group — Austin, TX
+March 2019 – August 2021
+
+- Built Python ETL pipelines processing e-commerce transaction data, supporting 200M+ rows per day with idempotent load patterns.
+- Wrote complex SQL for revenue attribution modeling, including multi-touch attribution using window functions across session-level event streams.
+- Deployed and maintained Airflow on Kubernetes using Helm charts, managing 30+ DAGs with SLA monitoring.
+- Introduced Great Expectations as the primary data validation framework across the team.
+- Conducted technical interviews and mentored 3 junior engineers.
+
+Data Analyst
+Fieldstone Consulting — Houston, TX
+July 2016 – February 2019
+
+- Developed SQL-based dashboards and reports for consulting clients using Tableau and Looker.
+- Built Python automation scripts for data extraction from client systems.
+- Created data dictionaries and documented transformation logic for client handoffs.
+
+EDUCATION
+
+M.S. Computer Science
+Rice University — Houston, TX
+Graduated May 2016
+
+B.Tech Information Technology
+Vellore Global Institute of Technology — Vellore, India
+Graduated May 2014
+
+TECHNICAL SKILLS
+
+Languages: Python, SQL, Bash, Terraform (HCL)
+Orchestration: Apache Airflow, dbt
+Cloud/Warehousing: Snowflake, PostgreSQL
+Data Quality: Great Expectations, dbt tests
+Tools: Git, Docker, Kubernetes, Helm, Tableau, Looker
+Other: Data modeling (medallion, star schema, SCD), feature stores, team leadership

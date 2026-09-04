@@ -1,0 +1,50 @@
+CARLOS MEDINA
+carlos.medina@sparkpost.io | (512) 555-1158 | Austin, TX | linkedin.com/in/carlosmedina-data
+
+SUMMARY
+Data Engineer with 4 years of experience in pipeline development and data warehouse operations. Focused on building reliable, well-tested data systems.
+
+EXPERIENCE
+
+Data Engineer
+Luminos Energy — Austin, TX
+November 2021 – Present
+
+- Build and maintain 15+ Apache Airflow DAGs orchestrating daily batch ingestion of energy trading data, weather forecasts, and grid pricing feeds into Snowflake.
+- Developed Python-based data connectors for proprietary energy market APIs, including retry logic, rate limiting, and data validation on ingestion.
+- Write Snowflake SQL for analytics transformations, including window functions for price trend analysis and CTEs for multi-step aggregation of time-series data.
+- Implemented a data quality monitoring system using Python and Airflow that validates data freshness, completeness, and statistical distributions, with automated PagerDuty alerting.
+- Designed a slowly changing dimension (SCD Type 2) model for the energy asset master data, tracking changes in asset ownership, capacity ratings, and regulatory status.
+- Set up CI/CD for Airflow DAGs and Python packages using GitHub Actions with automated linting, testing, and Snowflake migration scripts.
+- Participate in architecture review sessions and contribute to the team's data engineering standards documentation.
+
+Junior Data Engineer
+Clearview Data Corp — Austin, TX
+June 2020 – October 2021
+
+- Assisted senior engineers in building Python ETL pipelines loading data from flat files and REST APIs into BigQuery.
+- Wrote SQL for data transformation and quality checks.
+- Maintained Airflow DAGs and resolved minor pipeline failures during on-call rotations.
+- Created runbooks for common pipeline failure scenarios.
+
+Software Engineering Intern
+Clearview Data Corp — Austin, TX
+January 2020 – May 2020
+
+- Developed Python scripts for data extraction and format conversion.
+- Wrote unit tests for existing data processing modules.
+
+EDUCATION
+
+B.S. Computer Science
+St. Edwards University — Austin, TX
+Graduated December 2019
+
+TECHNICAL SKILLS
+
+Languages: Python, SQL, Bash
+Orchestration: Apache Airflow
+Cloud/Warehousing: Snowflake, Google BigQuery
+Data Quality: Custom Python frameworks
+Tools: Git, GitHub Actions, Docker, PagerDuty, pytest
+Other: Data modeling (star schema, SCD), time-series data, energy domain

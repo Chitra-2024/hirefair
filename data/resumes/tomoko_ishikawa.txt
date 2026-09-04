@@ -1,0 +1,64 @@
+TOMOKO ISHIKAWA
+tomoko.ishikawa@ciphermail.net | Austin, TX | github.com/tishikawa-data
+
+PROJECTS AND OPEN-SOURCE WORK
+
+DataForge — Personal Project (github.com/tishikawa-data/dataforge)
+October 2022 – Present
+- Built an end-to-end data pipeline framework in Python that orchestrates ingestion from REST APIs, CSV files, and databases into a local DuckDB analytical warehouse.
+- Implemented a configuration-driven pipeline definition system using YAML and Pydantic, allowing users to define source-to-target mappings, transformation logic, and scheduling without writing code.
+- Wrote a custom data validation engine that checks schema conformance, null rates, uniqueness constraints, and referential integrity, with configurable severity levels and Slack webhook alerting.
+- Built incremental load support using watermark tracking, reducing re-processing time by 90% compared to full-refresh pipelines.
+- Implemented comprehensive test coverage with pytest (85%+ coverage), including integration tests against a test DuckDB instance.
+- Project has 190+ GitHub stars and 12 external contributors.
+
+Snowflake Query Optimizer (github.com/tishikawa-data/sf-query-analyzer)
+March 2023 – Present
+- Developed a Python CLI tool that analyzes Snowflake query history via the INFORMATION_SCHEMA, identifies expensive queries, and suggests optimization strategies (clustering keys, materialized views, query rewrites).
+- Implements SQL parsing using sqlglot to detect anti-patterns such as SELECT *, missing filters on large tables, and inefficient join orderings.
+- 90+ GitHub stars.
+
+Contributor to meltano/meltano
+- Submitted 6 merged PRs to the Meltano project (an open-source ELT platform), including improvements to the Snowflake loader error handling and a new tap for ingesting data from the GitHub API.
+
+Contributor to apache/airflow
+- Submitted 3 merged PRs: fixed a race condition in the Snowflake hook connection pooling, added retry logic to the S3KeySensor, and improved documentation for the BigQuery operator.
+
+EXPERIENCE
+
+Freelance Data Engineering Consultant
+Self-employed — Remote
+January 2023 – Present
+
+- Contracted with 4 small-to-mid-size companies to build and improve their data infrastructure.
+- For a Series A fintech startup: built a complete Airflow-based data pipeline ingesting transaction data from Plaid APIs into Snowflake, including data quality checks and dbt transformations. Pipeline processes 15M+ rows daily.
+- For an e-commerce company: migrated legacy cron-based Python scripts to Apache Airflow, restructured their Redshift schema into a star schema model, and implemented CI/CD for pipeline deployment.
+- For a healthcare analytics firm: designed a HIPAA-compliant data pipeline architecture and implemented row-level security in Snowflake.
+- For a marketing agency: built Python-based ingestion pipelines for Google Ads, Meta Ads, and Shopify APIs with automatic rate limit handling and incremental loading.
+
+Research Assistant — Data Systems
+Kyoto Computational Research Institute — Kyoto, Japan
+April 2020 – November 2022
+
+- Assisted professors with large-scale data processing for computational biology research.
+- Built Python pipelines to process genomic sequencing data, implementing parallel processing with multiprocessing and Dask.
+- Managed research data infrastructure including PostgreSQL databases and NFS storage.
+- Co-authored a published paper on efficient data pipeline architectures for high-throughput sequencing analysis.
+
+EDUCATION
+
+Self-directed study in computer science and data engineering through MIT OpenCourseWare, Stanford Online, and Coursera. No formal degree.
+
+Relevant completed coursework:
+- MIT 6.830: Database Systems (OCW)
+- Stanford CS145: Data Management and Data Systems (Stanford Online)
+- Coursera: Data Engineering with Google Cloud (5-course specialization, completed with honors)
+
+TECHNICAL SKILLS
+
+Languages: Python, SQL, Bash
+Orchestration: Apache Airflow, dbt, Meltano
+Cloud/Warehousing: Snowflake, AWS Redshift, DuckDB, PostgreSQL
+Data Quality: Custom Python frameworks, Great Expectations
+Tools: Git, GitHub Actions, Docker, pytest, Pydantic, sqlglot
+Other: Data modeling (star schema, SCD), API integration, CI/CD, HIPAA compliance

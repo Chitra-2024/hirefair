@@ -1,0 +1,56 @@
+MEGAN DOYLE
+megan.doyle@swiftmail.org | (512) 555-1701 | Pflugerville, TX | linkedin.com/in/megandoyle-cloud
+
+SUMMARY
+Cloud infrastructure engineer with 5 years of experience in AWS and GCP. Experienced in Terraform, container orchestration, and cloud platform administration. Looking to broaden into data infrastructure and platform engineering.
+
+EXPERIENCE
+
+Senior Cloud Engineer
+Skyward Cloud Solutions — Austin, TX
+April 2022 – Present
+
+- Manage AWS infrastructure for 20+ client environments using Terraform, including VPCs, IAM policies, S3, RDS, and ECS clusters.
+- Built automated infrastructure provisioning pipelines using Terraform and GitHub Actions.
+- Administer Kubernetes clusters on EKS, managing deployments, scaling policies, and monitoring using Prometheus and Grafana.
+- Set up and manage Apache Airflow on Kubernetes (KubernetesExecutor) for a client's data team, including Helm chart configuration, resource allocation, and log aggregation.
+- Implemented infrastructure monitoring and alerting using CloudWatch, Datadog, and PagerDuty.
+- Write Python scripts for cloud automation, cost optimization, and compliance checking.
+
+Cloud Infrastructure Engineer
+Skyward Cloud Solutions — Austin, TX
+September 2019 – March 2022
+
+- Provisioned and maintained AWS environments for SaaS clients.
+- Built CI/CD pipelines using Jenkins and GitHub Actions for application deployments.
+- Managed Docker container environments and developed Dockerfiles for various application stacks.
+- Implemented backup, disaster recovery, and security hardening for cloud databases (RDS, DynamoDB).
+
+IT Systems Administrator
+Pinnacle Office Systems — Austin, TX
+June 2018 – August 2019
+
+- Managed Windows and Linux server infrastructure for a small business IT provider.
+- Administered Active Directory, DNS, and network infrastructure.
+- Automated routine tasks using Bash and PowerShell scripts.
+
+EDUCATION
+
+B.S. Information Technology
+Texas State University — San Marcos, TX
+Graduated May 2018
+
+CERTIFICATIONS
+
+- AWS Solutions Architect — Associate (Earned June 2020)
+- AWS Solutions Architect — Professional (Earned September 2022)
+- HashiCorp Certified Terraform Associate (Earned March 2021)
+
+TECHNICAL SKILLS
+
+Languages: Python (scripting/automation), Bash, PowerShell, Terraform (HCL)
+Cloud: AWS (S3, RDS, ECS, EKS, IAM, Lambda, CloudWatch), GCP
+Infrastructure: Terraform, Docker, Kubernetes, Helm
+CI/CD: GitHub Actions, Jenkins
+Monitoring: Prometheus, Grafana, Datadog, PagerDuty
+Other: Airflow administration (infrastructure level), networking, security

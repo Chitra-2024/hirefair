@@ -1,0 +1,48 @@
+JAMES OKAFOR
+james.okafor@postwise.net | (469) 555-0124 | Dallas, TX | linkedin.com/in/jamesokafor-data
+
+SUMMARY
+Data Engineer with 4 years of experience focused on building data pipelines and analytics infrastructure. Experience across cloud platforms and modern data stack tools.
+
+EXPERIENCE
+
+Data Engineer
+Cirrus Analytics — Dallas, TX
+April 2022 – Present
+
+- Build and maintain Apache Airflow DAGs for daily ETL ingestion of advertising performance data from Google Ads, Meta, and TikTok APIs into Snowflake.
+- Developed Python ingestion scripts using requests and boto3, handling pagination, rate limiting, and incremental load logic.
+- Write SQL transformations in Snowflake including CTEs, window functions for attribution modeling, and materialized views for dashboard performance.
+- Implemented Snowflake task-based scheduling as a lightweight alternative to Airflow for simple transformation jobs.
+- Participated in data modeling sessions, helping design a star schema for the ad-spend analytics domain.
+- Set up Snowflake resource monitors and usage alerts to control cloud costs.
+
+Data Engineer
+Veritas Logistics — Plano, TX
+September 2020 – March 2022
+
+- Built Python data pipelines to extract shipment and inventory data from SAP and Oracle systems into AWS Redshift.
+- Wrote SQL queries for supply chain reporting, including inventory turnover and delivery SLA calculations.
+- Created Airflow DAGs for scheduled data loads with basic error handling and Slack alerting.
+- Maintained data documentation in Confluence and participated in weekly data quality review meetings.
+
+Junior Data Analyst
+Veritas Logistics — Plano, TX
+August 2019 – August 2020
+
+- Produced weekly and monthly reports using SQL and Excel for operations and finance teams.
+- Automated several manual reporting tasks using Python scripts.
+
+EDUCATION
+
+B.S. Computer Engineering
+University of North Texas — Denton, TX
+Graduated May 2019
+
+TECHNICAL SKILLS
+
+Languages: Python, SQL
+Orchestration: Apache Airflow
+Cloud/Warehousing: Snowflake, AWS Redshift, S3
+Tools: Git, Docker, Confluence, Slack integrations
+Other: REST API integration, data modeling, pandas, boto3

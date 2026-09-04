@@ -1,0 +1,59 @@
+BENJAMIN TRAN
+benjamin.tran@silkroute-mail.com | (415) 555-1370 | San Francisco, CA (open to relocation) | linkedin.com/in/benjamintran-de
+
+SUMMARY
+Senior Data Engineer with 7 years of experience in data platform architecture and pipeline development. Deep expertise in large-scale data processing, streaming systems, and cloud data infrastructure. Experienced technical lead and mentor.
+
+EXPERIENCE
+
+Staff Data Engineer
+Pacifica Commerce — San Francisco, CA
+April 2021 – Present
+
+- Technical lead for a 6-person data engineering team responsible for the company's core data platform serving 15+ internal teams.
+- Architected a hybrid batch-and-streaming data platform using Apache Kafka for real-time event ingestion and Apache Airflow for batch orchestration, processing 5B+ events daily into Snowflake.
+- Designed the company's Snowflake data warehouse architecture using a hub-and-spoke model with domain-specific data marts and a centralized gold layer.
+- Implemented a custom Python-based data lineage tracker that maps data flow from source systems through transformations to final consumption, integrated with the internal data catalog.
+- Built Spark Streaming jobs for real-time fraud signal detection, processing Kafka streams with sub-second latency.
+- Established data engineering standards including code review processes, testing requirements, and documentation templates adopted across 3 teams.
+- Led evaluation and adoption of dbt for SQL-based transformations, migrating 100+ legacy stored procedures to version-controlled dbt models.
+- Managed Terraform-based infrastructure-as-code for Snowflake resources and AWS infrastructure (S3, IAM, Lambda).
+
+Senior Data Engineer
+Moonsail Technologies — San Francisco, CA
+September 2018 – March 2021
+
+- Built and maintained Python ETL pipelines processing e-commerce marketplace data from 200+ seller APIs into Redshift.
+- Designed and implemented data quality monitoring using Great Expectations integrated into Airflow DAGs.
+- Wrote complex SQL for marketplace analytics including GMV attribution, seller performance scoring, and buyer cohort analysis using advanced window functions.
+- Led migration from a cron-based scheduling system to Apache Airflow, establishing DAG development standards and testing practices.
+- Mentored 4 junior and mid-level data engineers.
+
+Data Engineer
+Clearstream Analytics — Oakland, CA
+July 2016 – August 2018
+
+- Developed Python data pipelines for media analytics, processing ad impression and click-stream data.
+- Built and maintained Redshift data warehouse schemas.
+- Wrote SQL queries for campaign performance analytics and reporting.
+- Introduced version control and code review practices to the data team.
+
+EDUCATION
+
+M.S. Computer Science
+Stanford University — Stanford, CA
+Graduated June 2016
+
+B.S. Computer Science
+University of California, Berkeley — Berkeley, CA
+Graduated May 2014
+
+TECHNICAL SKILLS
+
+Languages: Python, SQL, Scala, Bash, Terraform (HCL)
+Orchestration: Apache Airflow, dbt
+Streaming: Apache Kafka, Spark Streaming
+Cloud/Warehousing: Snowflake, AWS Redshift, S3, Lambda
+Data Quality: Great Expectations
+Tools: Git, Docker, Terraform, Jenkins, GitHub Actions
+Other: Data modeling, data lineage, team leadership, infrastructure-as-code

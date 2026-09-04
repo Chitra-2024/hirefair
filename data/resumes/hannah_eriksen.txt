@@ -1,0 +1,41 @@
+HANNAH ERIKSEN
+hannah.eriksen@arcticmail.net | (817) 555-1925 | Fort Worth, TX | linkedin.com/in/hannaheriksen
+
+EXPERIENCE
+
+Business Intelligence Developer
+Redstone Group — Fort Worth, TX
+April 2021 – Present
+
+- Develop and maintain Tableau dashboards for C-suite executives covering revenue, operations, and customer analytics.
+- Write SQL queries on Snowflake for dashboard data preparation, including joins, aggregations, and basic window functions.
+- Manage a library of 60+ saved Snowflake queries used by the analytics team for recurring reports.
+- Built a Python script that automates the extraction of data from Salesforce into CSV files for manual upload to Snowflake.
+
+Reporting Analyst
+Redstone Group — Fort Worth, TX
+September 2019 – March 2021
+
+- Created recurring reports using SQL Server and Crystal Reports.
+- Wrote SQL queries for ad-hoc analysis requests from department heads.
+- Maintained report distribution schedules and recipient lists.
+
+Administrative Coordinator
+Redstone Group — Fort Worth, TX
+January 2018 – August 2019
+
+- Managed office coordination and executive scheduling.
+- Built Excel-based tracking tools for project milestones.
+- Began self-studying SQL during this period using online resources.
+
+EDUCATION
+
+A.A.S. Business Administration
+Tarrant County College — Fort Worth, TX
+Graduated May 2017
+
+TECHNICAL SKILLS
+
+Languages: SQL, Python (basic)
+Tools: Tableau, Snowflake, SQL Server, Crystal Reports, Excel, Salesforce
+Other: Dashboard development, report automation, business analytics

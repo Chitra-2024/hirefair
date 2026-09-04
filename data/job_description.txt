@@ -1,0 +1,63 @@
+Senior Data Engineer — Meridian Analytics
+
+Location: Austin, TX (Hybrid — 3 days on-site)
+Department: Data Platform
+Reports to: Director of Data Engineering
+
+About Meridian Analytics
+
+Meridian Analytics is a mid-size analytics company that helps enterprise clients turn raw operational data into actionable intelligence. Our platform ingests data from hundreds of sources, transforms it through production-grade pipelines, and serves it to downstream ML models and business dashboards. We are scaling rapidly and looking for a Senior Data Engineer to own critical parts of our data infrastructure.
+
+Role Summary
+
+As a Senior Data Engineer, you will design, build, and maintain scalable data pipelines that process terabytes of data daily. You will work closely with data scientists, ML engineers, and product teams to ensure reliable, well-tested, and performant data delivery. You will be expected to take ownership of production systems and drive improvements in data quality, observability, and pipeline reliability.
+
+This is a hands-on individual contributor role with significant autonomy and influence over architectural decisions.
+
+Key Responsibilities
+
+- Design and build batch and streaming data pipelines using Python and SQL.
+- Develop and maintain ETL/ELT workflows in Apache Airflow.
+- Model and optimize data warehouse schemas in Snowflake.
+- Implement data quality checks, monitoring, and alerting for production pipelines.
+- Collaborate with data scientists to operationalize ML feature pipelines.
+- Write clean, tested, well-documented code following engineering best practices.
+- Participate in code reviews and contribute to team standards and tooling.
+- Troubleshoot production data incidents and perform root cause analysis.
+- Evaluate and integrate new tools and technologies as the platform evolves.
+
+Must-Have Requirements
+
+- 4+ years of professional experience building production data pipelines.
+- Strong proficiency in Python for data engineering tasks (not just scripting — building production systems).
+- Strong proficiency in SQL, including complex queries, window functions, CTEs, and query optimization.
+- Hands-on experience with Apache Airflow for workflow orchestration.
+- Experience with a cloud data warehouse, preferably Snowflake (BigQuery or Redshift also acceptable).
+- Solid understanding of data modeling principles (star schema, slowly changing dimensions, normalization/denormalization trade-offs).
+- Experience implementing data quality frameworks or validation checks in production.
+- Familiarity with version control (Git) and CI/CD practices for data pipelines.
+- Strong communication skills and ability to work cross-functionally with data science and product teams.
+
+Nice-to-Have Requirements
+
+- Experience with streaming data technologies (Apache Kafka, Spark Streaming, or Flink).
+- Familiarity with containerization (Docker) and infrastructure-as-code (Terraform).
+- Experience with dbt for data transformation.
+- Exposure to ML feature stores or ML pipeline operationalization.
+- Contributions to internal or open-source data tooling.
+- Experience mentoring junior engineers or leading technical projects.
+
+Compensation and Benefits
+
+- Salary range: $145,000–$185,000 depending on experience.
+- Annual performance bonus.
+- Equity participation.
+- Health, dental, and vision insurance.
+- 401(k) with company match.
+- Flexible PTO policy.
+- $2,000 annual learning and development stipend.
+- Relocation assistance available.
+
+Equal Opportunity
+
+Meridian Analytics is an equal opportunity employer committed to building a diverse team. We evaluate candidates based on their skills, experience, and demonstrated ability — not on pedigree alone.

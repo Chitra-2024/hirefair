@@ -1,0 +1,35 @@
+NATHANIEL BROOKS
+n.brooks@mailhaven.com | (Austin, TX area) | linkedin.com/in/nathanielbrooks-data
+
+SUMMARY
+Data engineering and infrastructure professional. Experience with pipeline development, cloud platforms, and data warehousing.
+
+EXPERIENCE
+
+Data Engineer
+Vertex Analytics
+- Designed and maintained data pipelines using Python and Apache Airflow.
+- Built ETL workflows ingesting data from various sources into Snowflake.
+- Wrote SQL transformations including star schema modeling and incremental load patterns.
+- Implemented data quality checks using Great Expectations.
+- Collaborated with data science team on feature pipeline development.
+- Managed CI/CD processes for pipeline code using Git and Jenkins.
+
+Data Analyst
+Pinnacle Systems
+- Built reporting dashboards and wrote SQL queries for business analytics.
+- Developed Python scripts for data extraction and automation.
+- Maintained documentation for data models and transformation logic.
+
+EDUCATION
+
+B.S. Computer Science
+Westfield State University
+
+TECHNICAL SKILLS
+
+Languages: Python, SQL, Bash
+Orchestration: Apache Airflow
+Cloud/Warehousing: Snowflake, AWS S3
+Data Quality: Great Expectations
+Tools: Git, Jenkins, Docker, pandas

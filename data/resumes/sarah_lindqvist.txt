@@ -1,0 +1,55 @@
+SARAH LINDQVIST
+sarah.lindqvist@novapost.io | (512) 555-0462 | Austin, TX | github.com/slindqvist
+
+SUMMARY
+Data Engineer with 5 years of experience building analytics and ML infrastructure. Deep experience with streaming and batch pipeline architectures. Active contributor to open-source data tools.
+
+EXPERIENCE
+
+Senior Data Engineer
+Tidewater Systems — Austin, TX
+June 2021 – Present
+
+- Designed and implemented a real-time event streaming pipeline using Apache Kafka and Kafka Connect, processing 2M+ events per hour from IoT devices into Snowflake via a custom Python consumer application.
+- Built batch Airflow DAGs for daily aggregation of streaming data into dimensional models, implementing incremental merge patterns in Snowflake SQL.
+- Developed a Python-based schema registry validation tool that prevents breaking schema changes from reaching production Kafka topics.
+- Implemented data quality monitoring using Great Expectations integrated into Airflow DAGs, with automated PagerDuty alerting on validation failures.
+- Built and maintained CI/CD pipelines using GitHub Actions for both Airflow DAGs and Python packages, including automated testing, linting, and Snowflake schema migration.
+- Collaborated with the ML team to build a Kafka-to-feature-store pipeline serving real-time features to a predictive maintenance model.
+
+Data Engineer
+Northstar Analytics — Portland, OR
+January 2019 – May 2021
+
+- Built Python ETL pipelines ingesting data from Salesforce, Hubspot, and internal APIs into BigQuery.
+- Wrote dbt models for marketing attribution and customer lifecycle analytics, including complex window function transformations.
+- Managed Airflow deployment on GCP Composer, maintaining 20+ DAGs with SLA monitoring and retry policies.
+- Introduced Spark for processing large historical backfills that exceeded single-node capacity.
+
+Software Engineer (Backend)
+Greenfield Labs — Seattle, WA
+July 2017 – December 2018
+
+- Developed RESTful APIs in Python (FastAPI) and Go for a SaaS analytics product.
+- Designed PostgreSQL schemas and wrote migration scripts.
+- Built event-driven microservices using RabbitMQ.
+
+EDUCATION
+
+B.S. Computer Science
+Oregon State University — Corvallis, OR
+Graduated June 2017
+
+OPEN SOURCE
+
+- Core contributor to apache/airflow — contributed 12 PRs including a custom sensor operator for S3 event detection and improvements to the Snowflake provider hook. Merged contributions visible at github.com/apache/airflow.
+- Maintainer of slindqvist/snowpipe-monitor — an open-source Python CLI tool for monitoring Snowpipe ingestion latency and error rates. 340+ GitHub stars.
+
+TECHNICAL SKILLS
+
+Languages: Python, SQL, Go, Bash
+Orchestration: Apache Airflow, dbt
+Streaming: Apache Kafka, Kafka Connect, Spark
+Cloud/Warehousing: Snowflake, Google BigQuery, GCP Composer
+Data Quality: Great Expectations
+Tools: Git, GitHub Actions, Docker, Terraform, FastAPI

@@ -1,0 +1,52 @@
+NINA KOZLOVA
+nina.kozlova@pinegrove-mail.com | (972) 555-2149 | Frisco, TX | linkedin.com/in/ninakozlova-de
+
+SUMMARY
+Data Engineer with 6 years of experience building data infrastructure and analytics platforms. Specialized in financial services data with deep expertise in regulatory data requirements and compliance.
+
+EXPERIENCE
+
+Senior Data Engineer
+Silvergate Capital Analytics — Dallas, TX
+January 2022 – Present
+
+- Lead the design and development of the firm's core data warehouse on Snowflake, implementing a medallion architecture with automated data lineage tracking.
+- Build and maintain 50+ Apache Airflow DAGs for batch ingestion of trade execution data, market data feeds, and regulatory filing data into Snowflake.
+- Developed a Python-based data reconciliation framework that cross-validates data between source systems and the warehouse, processing 1B+ records daily with automated discrepancy reporting.
+- Write advanced Snowflake SQL including recursive CTEs for hierarchical portfolio roll-ups, window functions for time-weighted return calculations, and merge statements for complex SCD Type 2 updates.
+- Implemented data quality gates using Great Expectations at every stage of the pipeline, with automated escalation to the data governance team for critical failures.
+- Built CI/CD pipelines using GitHub Actions for Airflow DAGs and Python packages, including Snowflake schema migration testing in isolated environments.
+- Designed and implemented row-level security policies in Snowflake for regulatory compliance with SOC 2 and SEC reporting requirements.
+- Mentor 2 junior data engineers and lead weekly knowledge-sharing sessions.
+
+Data Engineer
+Cornerstone Analytics — Fort Worth, TX
+March 2019 – December 2021
+
+- Built Python ETL pipelines processing insurance claims and policy data into Redshift.
+- Wrote dbt models for actuarial analytics, including loss ratio calculations and reserve triangles.
+- Managed Airflow deployment on AWS, maintaining 25+ DAGs with SLA monitoring.
+- Implemented data masking and anonymization procedures for PII-containing datasets.
+
+Junior Data Engineer
+Cornerstone Analytics — Fort Worth, TX
+July 2017 – February 2019
+
+- Assisted senior engineers with pipeline development and maintenance.
+- Wrote SQL queries for data validation and quality checks.
+- Documented data models and ETL processes.
+
+EDUCATION
+
+B.S. Computer Science
+University of Texas at Arlington — Arlington, TX
+Graduated May 2017
+
+TECHNICAL SKILLS
+
+Languages: Python, SQL, Bash
+Orchestration: Apache Airflow, dbt
+Cloud/Warehousing: Snowflake, AWS Redshift
+Data Quality: Great Expectations, custom reconciliation frameworks
+Tools: Git, GitHub Actions, Docker, pandas, pytest
+Other: Data modeling (medallion, star schema, SCD), financial data, regulatory compliance (SOC 2, SEC), data governance

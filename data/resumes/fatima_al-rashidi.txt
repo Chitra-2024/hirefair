@@ -1,0 +1,53 @@
+FATIMA AL-RASHIDI
+fatima.alrashidi@cosmicmail.com | (737) 555-0931 | Austin, TX | linkedin.com/in/fatima-alrashidi
+
+SUMMARY
+Data professional with experience in analytics engineering and pipeline development. Background in both startup and enterprise environments.
+
+EXPERIENCE
+
+Analytics Engineer
+Solvara Technologies — Austin, TX
+January 2022 – Present
+
+- Own the company's dbt project comprising 150+ models transforming raw Snowflake data into clean analytical datasets for product, marketing, and finance teams.
+- Write complex SQL daily including window functions for user engagement metrics, CTEs for multi-step transformations, and incremental models for event-level data.
+- Implemented dbt tests (schema tests, data tests, and custom generic tests) covering data freshness, uniqueness, referential integrity, and business logic validation across all production models.
+- Built a Streamlit-based data catalog application in Python that reads dbt manifest metadata and presents searchable documentation for all models, sources, and metrics.
+- Collaborated with the data engineering team to design Airflow DAGs that trigger dbt runs, manage dependencies, and handle failure alerting.
+- Introduced CI/CD for the dbt project using GitHub Actions, including automated model compilation, test execution, and documentation generation on every PR.
+
+Data Analyst
+Ironclad Dynamics — Houston, TX
+March 2019 – December 2021
+
+- Built SQL-based analytics for manufacturing operations, including production yield analysis, defect rate trending, and equipment utilization reporting.
+- Developed Python automation scripts for data extraction and transformation from SAP and MES systems.
+- Created Tableau dashboards for executive reporting on plant performance KPIs.
+- Managed a small Redshift cluster and wrote ETL logic in Python to load data from S3.
+
+Research Assistant
+Lakeshore University — Chicago, IL
+September 2017 – February 2019
+
+- Supported faculty research on supply chain optimization using Python and R.
+- Managed research datasets in PostgreSQL and wrote analysis queries.
+
+EDUCATION
+
+M.S. Industrial Engineering
+Lakeshore University — Chicago, IL
+Graduated February 2019
+
+B.S. Industrial Engineering
+Khalifa Technical University — Abu Dhabi, UAE
+Graduated June 2016
+
+TECHNICAL SKILLS
+
+Languages: Python, SQL, R, Bash
+Orchestration: dbt, Apache Airflow (collaborative)
+Cloud/Warehousing: Snowflake, AWS Redshift, S3
+Data Quality: dbt tests, custom validation
+Tools: Git, GitHub Actions, Streamlit, Tableau, pandas
+Other: Data modeling, CI/CD for data, analytics engineering

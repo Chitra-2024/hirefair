@@ -1,0 +1,53 @@
+LAURA PETROV
+laura.petrov@horizonmail.net | (214) 555-1042 | Dallas, TX | linkedin.com/in/laurapetrov-mle
+
+SUMMARY
+Machine learning engineer with 4 years of experience building and deploying ML models in production. Strong Python skills with focus on MLOps, feature engineering, and model serving infrastructure.
+
+EXPERIENCE
+
+ML Engineer II
+Spectra AI — Dallas, TX
+May 2022 – Present
+
+- Design and deploy ML models for customer propensity scoring, serving predictions to 3 downstream applications via a FastAPI model serving layer.
+- Built a feature engineering pipeline in Python using Spark and pandas that computes 200+ features from raw event data stored in Snowflake.
+- Implemented an MLflow-based experiment tracking and model registry system.
+- Write SQL queries in Snowflake for feature extraction, including window functions for behavioral sequence features and CTEs for multi-step feature derivation.
+- Built Airflow DAGs for daily model retraining and feature refresh workflows, including data validation checkpoints using Great Expectations.
+- Collaborated with data engineers to establish a shared feature store architecture.
+
+ML Engineer
+Quantis Labs — Austin, TX
+January 2021 – April 2022
+
+- Developed classification and regression models for insurance risk prediction using scikit-learn and XGBoost.
+- Built Python data processing pipelines using pandas for feature engineering and training data preparation.
+- Wrote SQL queries on Redshift for extracting training datasets.
+- Deployed models using Docker containers on AWS ECS with API endpoints.
+
+Data Science Intern
+Quantis Labs — Austin, TX
+June 2020 – December 2020
+
+- Assisted senior data scientists with exploratory data analysis and model prototyping.
+- Built Jupyter notebook-based analysis workflows.
+
+EDUCATION
+
+M.S. Computer Science (Machine Learning concentration)
+University of Texas at Dallas — Richardson, TX
+Graduated May 2020
+
+B.S. Mathematics
+Southern Methodist University — Dallas, TX
+Graduated May 2018
+
+TECHNICAL SKILLS
+
+Languages: Python, SQL, Bash
+ML/Data: scikit-learn, XGBoost, pandas, Spark, MLflow
+Orchestration: Apache Airflow
+Cloud/Warehousing: Snowflake, AWS Redshift, S3, ECS
+Tools: Git, Docker, FastAPI, Great Expectations
+Other: Feature engineering, model serving, MLOps

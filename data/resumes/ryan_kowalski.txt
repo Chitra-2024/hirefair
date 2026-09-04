@@ -1,0 +1,50 @@
+RYAN KOWALSKI
+ryan.kowalski@gridmail.io | (512) 555-0855 | Austin, TX | linkedin.com/in/ryankowalski-eng
+
+SUMMARY
+Software engineer with 5 years of backend development experience. Strong Python skills and growing interest in data engineering and analytics infrastructure.
+
+EXPERIENCE
+
+Senior Software Engineer
+Canopy Digital — Austin, TX
+August 2021 – Present
+
+- Develop and maintain Python microservices (FastAPI, Flask) serving 50K+ RPM for a B2B SaaS platform.
+- Designed and implemented a PostgreSQL-based event tracking system that captures product usage events for analytics.
+- Built a Celery-based task queue for asynchronous data processing, handling report generation and data export jobs.
+- Write SQL queries for internal analytics and debugging, including joins across 10+ tables and subquery-based filtering.
+- Implemented database schema migrations using Alembic with zero-downtime deployment patterns.
+- Participate in on-call rotation and incident response for backend services.
+- Mentor 2 junior engineers on code quality, testing, and system design.
+
+Software Engineer
+Canopy Digital — Austin, TX
+February 2019 – July 2021
+
+- Built REST APIs in Python for client-facing features.
+- Wrote unit and integration tests using pytest, maintaining 80%+ code coverage.
+- Designed PostgreSQL schemas for new product features.
+- Implemented caching layers using Redis to improve API response times.
+
+Junior Developer
+Appvine Studios — Austin, TX
+June 2017 – January 2019
+
+- Developed web applications using Python (Django) and JavaScript.
+- Wrote SQL queries for application data access layers.
+- Participated in agile development processes and code reviews.
+
+EDUCATION
+
+B.S. Computer Science
+Texas A&M University — College Station, TX
+Graduated May 2017
+
+TECHNICAL SKILLS
+
+Languages: Python, SQL, JavaScript, Bash
+Frameworks: FastAPI, Flask, Django, Celery
+Databases: PostgreSQL, Redis
+Tools: Git, Docker, Alembic, pytest
+Other: Microservices, REST APIs, event-driven architecture

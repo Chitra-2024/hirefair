@@ -1,0 +1,51 @@
+AISHA JOHNSON
+aisha.johnson@clearpath-mail.com | (713) 555-1263 | Houston, TX | linkedin.com/in/aishajohnson-pm
+
+SUMMARY
+Technical program manager with 6 years of experience leading data and analytics initiatives. Strong communicator who bridges engineering and business teams. Background in project delivery for data platform modernization.
+
+EXPERIENCE
+
+Senior Technical Program Manager
+Ascend Data Solutions — Houston, TX
+March 2022 – Present
+
+- Manage a portfolio of 5 concurrent data platform projects including a Snowflake migration, Airflow adoption, and data quality initiative.
+- Coordinate across data engineering, data science, and business stakeholder teams to define requirements, manage timelines, and resolve cross-team dependencies.
+- Created project dashboards in Jira and Confluence to track pipeline delivery milestones and data quality SLA metrics.
+- Facilitated architecture decision records (ADRs) for technology selection including Snowflake vs. Databricks and Airflow vs. Prefect evaluations.
+- Led the vendor evaluation and procurement process for a data observability platform.
+
+Technical Program Manager
+DataBridge Consulting — Houston, TX
+January 2019 – February 2022
+
+- Managed delivery of data warehouse modernization projects for 3 enterprise clients.
+- Coordinated data migration planning, testing, and cutover for legacy-to-cloud warehouse transitions.
+- Wrote project documentation including technical specifications, risk assessments, and stakeholder communications.
+- Managed a team of 8 engineers and analysts across client engagements.
+
+Business Analyst
+DataBridge Consulting — Houston, TX
+August 2017 – December 2018
+
+- Gathered and documented business requirements for data analytics projects.
+- Wrote SQL queries for data validation during warehouse migration testing.
+- Created Tableau dashboards for executive stakeholder reporting.
+
+EDUCATION
+
+MBA, Technology Management
+Rice University — Houston, TX
+Graduated May 2017
+
+B.S. Information Systems
+University of Houston — Houston, TX
+Graduated May 2015
+
+TECHNICAL SKILLS
+
+Languages: SQL (intermediate), Python (basic scripting)
+Tools: Jira, Confluence, Tableau, Git (basic)
+Platforms: Snowflake (admin/project level), Airflow (project management)
+Other: Program management, stakeholder communication, vendor evaluation, Agile/Scrum

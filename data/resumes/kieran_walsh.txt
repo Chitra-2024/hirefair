@@ -1,0 +1,57 @@
+KIERAN WALSH
+kieran.walsh@netbridge.co | (303) 555-0742 | Remote (Denver, CO) | github.com/kwdataeng
+
+SUMMARY
+Data engineer and open-source contributor with a background in mechanical engineering. Built production data pipelines for two companies and maintain several widely-used open-source data tools. Focused on pipeline reliability, testing, and developer experience.
+
+EXPERIENCE
+
+Data Engineer
+Stonebridge Renewable Energy — Denver, CO
+February 2023 – Present
+
+- Build and maintain Apache Airflow DAGs that ingest SCADA sensor data from 40+ wind turbines into Snowflake, processing 800M+ rows per day.
+- Developed a custom Airflow operator in Python for interacting with the company's proprietary SCADA API, handling authentication, pagination, and retry logic.
+- Write complex Snowflake SQL for turbine performance analytics, including window functions for rolling efficiency calculations and CTEs for multi-stage aggregation.
+- Implemented a data quality framework using Great Expectations integrated into Airflow, with 200+ validation expectations across the pipeline.
+- Set up CI/CD for Airflow DAGs and Python packages using GitHub Actions, including automated pytest execution and Snowflake schema migration checks.
+- Collaborate with the ML team to build daily feature pipelines for turbine failure prediction models.
+
+Data Pipeline Developer
+Alterra Environmental Consulting — Boulder, CO
+June 2021 – January 2023
+
+- Built Python ETL pipelines to process environmental monitoring data (air quality, water quality) from government APIs and CSV flat files into a PostgreSQL data warehouse.
+- Wrote SQL transformations for regulatory compliance reporting.
+- Managed a small Airflow deployment for scheduling daily and weekly data loads.
+- Introduced version control and code review processes for the data team.
+
+Mechanical Engineer
+Ramsay Industrial Systems — Fort Collins, CO
+August 2017 – May 2021
+
+- Designed mechanical systems for industrial automation equipment.
+- Built Python scripts to analyze test data from sensor arrays and produce automated QA reports.
+- Developed Excel VBA tools for engineering calculations that were adopted team-wide.
+- Completed an internal data analytics training program and began contributing to the company's data infrastructure in the final year.
+
+EDUCATION
+
+B.S. Mechanical Engineering
+Colorado School of Mines — Golden, CO
+Graduated May 2017
+
+OPEN SOURCE
+
+- Creator and maintainer of kwdataeng/airflow-dq-plugin — an Airflow plugin that wraps Great Expectations checkpoints as native Airflow operators with built-in alerting. 520+ GitHub stars, used by 3 companies in production.
+- Contributor to dbt-labs/dbt-core — submitted 4 merged PRs fixing edge cases in incremental materialization logic and improving error messaging for schema tests.
+- Author of a 3-part blog series on "Testing Data Pipelines in Production" published on Towards Data Science, with 25K+ total reads.
+
+TECHNICAL SKILLS
+
+Languages: Python, SQL, Bash
+Orchestration: Apache Airflow, dbt
+Cloud/Warehousing: Snowflake, PostgreSQL
+Data Quality: Great Expectations, custom Airflow plugins
+Tools: Git, GitHub Actions, Docker, pytest
+Other: Data modeling, SCADA systems, sensor data processing

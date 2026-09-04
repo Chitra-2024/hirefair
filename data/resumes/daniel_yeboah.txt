@@ -1,0 +1,52 @@
+DANIEL YEBOAH
+daniel.yeboah@truemail.dev | (737) 555-1594 | Georgetown, TX | linkedin.com/in/danielyeboah
+
+SUMMARY
+Data Engineer with 5 years of experience building data pipelines and warehouse infrastructure. Strong SQL background with experience across multiple cloud platforms.
+
+EXPERIENCE
+
+Data Engineer
+Crestview Financial Technologies — Austin, TX
+August 2021 – Present
+
+- Design and maintain Apache Airflow DAGs for daily batch ingestion of financial transaction data, account data, and market feeds into Snowflake.
+- Developed Python data pipeline modules with comprehensive error handling, logging, and retry logic for production reliability.
+- Write complex Snowflake SQL including multi-level CTEs, window functions for rolling balance calculations, and merge statements for upsert patterns.
+- Implemented a data quality validation layer using Python that checks schema conformance, business rule compliance, and cross-table referential integrity for every pipeline run.
+- Designed a star schema data model for the loan origination analytics domain, including fact tables for applications and disbursements and dimension tables for products, branches, and customer segments.
+- Built CI/CD pipelines using GitLab CI for Airflow DAG deployment with automated testing and staging environment validation.
+- Collaborate with the risk analytics team to build and maintain feature pipelines feeding credit risk models.
+
+Data Engineer
+Meridian Stream Technologies — San Antonio, TX
+March 2019 – July 2021
+
+- Built Python ETL pipelines processing healthcare claims data from EDI 837/835 files into AWS Redshift.
+- Wrote SQL transformations for claims adjudication analytics and provider network analysis.
+- Managed Airflow deployment on AWS EC2, including DAG development, log management, and alerting setup.
+- Introduced automated data validation checks that caught $2M+ in claims processing discrepancies over 18 months.
+- Documented data models and pipeline architecture for SOC 2 compliance audits.
+
+IT Support Analyst
+Meridian Stream Technologies — San Antonio, TX
+January 2018 – February 2019
+
+- Provided technical support and managed internal IT systems.
+- Began learning Python and SQL through self-study and internal training.
+- Transitioned to the data engineering team after completing an internal skills assessment.
+
+EDUCATION
+
+B.S. Information Technology
+University of the Incarnate Word — San Antonio, TX
+Graduated December 2017
+
+TECHNICAL SKILLS
+
+Languages: Python, SQL, Bash
+Orchestration: Apache Airflow
+Cloud/Warehousing: Snowflake, AWS Redshift
+Data Quality: Custom Python validation frameworks
+Tools: Git, GitLab CI, Docker, pandas
+Other: Data modeling (star schema), EDI healthcare data, financial data, SOC 2 compliance

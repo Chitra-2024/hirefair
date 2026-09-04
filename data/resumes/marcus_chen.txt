@@ -1,0 +1,51 @@
+MARCUS CHEN
+marcus.chen@brixton-mail.com | (737) 555-0293 | Austin, TX | linkedin.com/in/marcuschen-de
+
+SUMMARY
+Data Engineer with 5 years of experience building scalable data infrastructure for analytics and machine learning. Deep expertise in Python, SQL, and modern data stack tooling. Focused on pipeline reliability and cross-team collaboration.
+
+EXPERIENCE
+
+Data Engineer II
+Palomar Health Analytics — Austin, TX
+January 2021 – Present
+
+- Designed and built 25+ Airflow DAGs orchestrating daily and hourly ETL pipelines that ingest clinical and claims data into Snowflake from HL7 feeds, flat files, and PostgreSQL replicas.
+- Developed Python-based data transformation modules using pandas and SQLAlchemy, processing an average of 500 million rows per day.
+- Implemented window functions and CTEs in Snowflake SQL to compute rolling patient risk scores and cohort-level aggregates for downstream analytics teams.
+- Created a data quality monitoring dashboard using Python and Grafana that tracks freshness, completeness, and anomaly metrics across 150+ tables.
+- Built CI/CD pipelines for Airflow DAG deployment using GitLab CI, including linting, unit testing, and blue-green deployment to staging.
+- Collaborated with the data science team to productionize an ML feature pipeline that generates daily patient feature vectors for a readmission prediction model.
+- Served as on-call data engineer, resolving production incidents with documented root cause analysis and post-mortems.
+
+Data Engineer
+Ridgepoint Financial — San Antonio, TX
+August 2019 – December 2020
+
+- Built ETL pipelines in Python and Airflow to consolidate transaction data from 8 banking systems into a centralized BigQuery data warehouse.
+- Designed normalized and denormalized schemas for regulatory reporting and business intelligence use cases.
+- Wrote stored procedures and complex SQL queries for reconciliation and audit processes.
+- Implemented row-level data validation checks that flagged 200+ data discrepancies per month for operations review.
+
+Junior Software Developer
+Ridgepoint Financial — San Antonio, TX
+June 2018 – July 2019
+
+- Developed internal Python tools for report generation and data extraction.
+- Maintained Flask-based APIs serving internal dashboards.
+- Wrote unit tests and participated in code reviews.
+
+EDUCATION
+
+B.S. Information Systems
+Texas State University — San Marcos, TX
+Graduated May 2018
+
+TECHNICAL SKILLS
+
+Languages: Python, SQL, Bash
+Orchestration: Apache Airflow
+Cloud/Warehousing: Snowflake, Google BigQuery
+Data Quality: Custom Python validation, Grafana monitoring
+Tools: Git, GitLab CI, Docker, pandas, SQLAlchemy
+Other: Data modeling, HL7 data formats, Flask, REST APIs

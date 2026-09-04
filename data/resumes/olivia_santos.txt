@@ -1,0 +1,38 @@
+OLIVIA SANTOS
+olivia.santos@northwindmail.com | (512) 555-1487 | Austin, TX | linkedin.com/in/oliviasantos-data
+
+SUMMARY
+Data engineer and analyst with 3 years of experience. Comfortable with Python and SQL in analytics contexts. Looking to deepen skills in data infrastructure.
+
+EXPERIENCE
+
+Data Analyst / Junior Data Engineer
+Trailmark Digital — Austin, TX
+July 2022 – Present
+
+- Write SQL queries in BigQuery for marketing analytics, including campaign attribution, customer segmentation, and funnel conversion analysis.
+- Built Python scripts using pandas to automate weekly reporting workflows, reducing manual effort by 5 hours per week.
+- Developed 3 Airflow DAGs for scheduled data ingestion from Google Analytics and Hubspot APIs into BigQuery.
+- Assist the senior data engineer with pipeline troubleshooting and on-call support.
+- Created a basic data quality check script in Python that validates row counts and null rates for critical tables.
+
+Marketing Data Intern
+Trailmark Digital — Austin, TX
+January 2022 – June 2022
+
+- Supported the analytics team with ad-hoc SQL queries and data pulls.
+- Built Excel and Google Sheets reports for marketing performance reviews.
+
+EDUCATION
+
+B.S. Statistics
+University of Texas at Austin — Austin, TX
+Graduated December 2021
+
+TECHNICAL SKILLS
+
+Languages: Python, SQL, R
+Cloud/Warehousing: Google BigQuery
+Orchestration: Apache Airflow (basic)
+Tools: Git, pandas, Google Analytics, Hubspot
+Other: Marketing analytics, statistical analysis, data visualization

@@ -1,0 +1,39 @@
+DEVON MORALES
+devon.morales@quickmailhub.com | (210) 555-0538 | San Antonio, TX | linkedin.com/in/devonmorales
+
+SUMMARY
+Motivated data engineer with 2 years of professional experience and a strong foundation in Python and SQL. Eager to grow into more complex data infrastructure challenges.
+
+EXPERIENCE
+
+Data Engineer
+Bluepoint SaaS — San Antonio, TX
+March 2023 – Present
+
+- Build and maintain Airflow DAGs for daily ingestion of product usage events and billing data into Snowflake.
+- Write SQL transformations for product analytics dashboards, including user retention cohort queries and funnel analysis.
+- Developed a Python script to detect and alert on schema drift in upstream API responses.
+- Participate in weekly data quality review meetings and document known data issues in the team wiki.
+
+Data Engineering Intern
+Bluepoint SaaS — San Antonio, TX
+June 2022 – February 2023
+
+- Assisted senior engineers in building Python data pipelines using pandas and SQLAlchemy.
+- Wrote SQL queries for ad-hoc analysis requests from the product team.
+- Created automated tests for existing Airflow DAGs using pytest.
+- Documented data lineage for 15+ Snowflake tables.
+
+EDUCATION
+
+B.S. Computer Science
+University of Texas at San Antonio — San Antonio, TX
+Graduated May 2022
+
+TECHNICAL SKILLS
+
+Languages: Python, SQL
+Orchestration: Apache Airflow
+Cloud/Warehousing: Snowflake
+Tools: Git, pandas, SQLAlchemy, pytest
+Other: Data lineage documentation, schema drift detection

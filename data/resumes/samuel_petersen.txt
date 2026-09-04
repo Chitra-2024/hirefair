@@ -1,0 +1,57 @@
+SAMUEL PETERSEN
+samuel.petersen@dailymail-hub.com | (512) 555-2032 | Austin, TX | linkedin.com/in/samuelpetersen
+
+SUMMARY
+Recent graduate with a strong academic foundation in computer science and data systems. Completed coursework in databases, distributed systems, and data engineering. Seeking an entry-level data engineering position.
+
+EDUCATION
+
+M.S. Computer Science
+Georgia Institute of Technology — Atlanta, GA
+Graduated May 2025
+Thesis: "Optimizing Incremental View Maintenance in Column-Oriented Data Warehouses"
+GPA: 3.85/4.0
+
+B.S. Computer Science
+University of Georgia — Athens, GA
+Graduated May 2023
+GPA: 3.72/4.0
+
+ACADEMIC PROJECTS
+
+Distributed ETL Pipeline (Graduate Capstone Project)
+- Designed and implemented a distributed ETL pipeline using Python and Apache Spark that processes 50GB of NYC taxi trip data.
+- Implemented data quality validation checks including schema validation, null rate thresholds, and statistical outlier detection.
+- Loaded processed data into a PostgreSQL data warehouse with a star schema design.
+- Orchestrated the pipeline using Apache Airflow with dependency management and retry logic.
+
+Real-Time Analytics Dashboard (Course Project — CS 6675 Streaming Systems)
+- Built a real-time analytics pipeline using Apache Kafka and Spark Streaming to process simulated IoT sensor data.
+- Computed sliding-window aggregations and wrote results to PostgreSQL for dashboard visualization.
+
+EXPERIENCE
+
+Data Engineering Intern
+Waveform Analytics — Atlanta, GA
+May 2024 – August 2024
+
+- Assisted the data team in writing Python scripts for data extraction from REST APIs.
+- Wrote SQL queries in Snowflake for data validation and ad-hoc analysis.
+- Created documentation for 10+ Airflow DAGs including data flow diagrams and failure runbooks.
+- Built a prototype data lineage visualization tool using Python and NetworkX.
+
+Teaching Assistant — Database Systems (CS 4400)
+Georgia Institute of Technology — Atlanta, GA
+August 2023 – May 2024
+
+- Led lab sections covering SQL, relational algebra, and database design.
+- Graded assignments on query optimization, normalization, and transaction management.
+
+TECHNICAL SKILLS
+
+Languages: Python, SQL, Java, Bash
+Orchestration: Apache Airflow (academic and internship)
+Processing: Apache Spark, Spark Streaming, Apache Kafka (academic)
+Databases: PostgreSQL, Snowflake (internship), SQLite
+Tools: Git, Docker, pandas, NetworkX, pytest
+Other: Data modeling (star schema), distributed systems, query optimization

@@ -1,0 +1,51 @@
+ALEX RIVERA
+alex.rivera@nexusmail.co | (512) 555-1818 | Austin, TX | linkedin.com/in/alexrivera-de
+
+SUMMARY
+Data engineer with 4 years of experience in pipeline development and data infrastructure, with additional expertise in streaming systems and real-time analytics.
+
+EXPERIENCE
+
+Data Engineer II
+Vantage Point Analytics — Austin, TX
+February 2022 – Present
+
+- Build and maintain Apache Airflow DAGs for batch ingestion of clickstream, transaction, and product catalog data into Snowflake from Kafka topics, S3 files, and PostgreSQL replicas.
+- Developed a Python-based Kafka consumer application that processes real-time clickstream events for session stitching and writes enriched events to Snowflake via Snowpipe.
+- Write complex Snowflake SQL for behavioral analytics, including window functions for sessionization, funnel conversion analysis, and cohort retention queries.
+- Implemented dbt models for the analytics layer, including 50+ models with schema tests, freshness checks, and automated documentation.
+- Built a data quality framework using Great Expectations integrated into Airflow, validating 100+ datasets daily with automated Slack alerting on failures.
+- Set up CI/CD using GitHub Actions for Airflow DAGs, dbt models, and Python packages, including automated testing and blue-green deployment to staging.
+- Designed a star schema data model for the customer analytics domain, including SCD Type 2 dimensions for customer attributes and product categories.
+
+Data Engineer
+Streamline Data — Austin, TX
+June 2020 – January 2022
+
+- Built Python ETL pipelines ingesting data from REST APIs and flat files into Redshift.
+- Wrote SQL transformations for marketing attribution and revenue analytics.
+- Managed a small Airflow deployment and developed DAGs for daily and weekly data loads.
+- Introduced Great Expectations as a data validation layer.
+
+Data Engineering Intern
+Streamline Data — Austin, TX
+January 2020 – May 2020
+
+- Assisted with Python script development and SQL query optimization.
+- Documented data pipeline architecture and failure runbooks.
+
+EDUCATION
+
+B.S. Computer Science
+University of Texas at Austin — Austin, TX
+Graduated December 2019
+
+TECHNICAL SKILLS
+
+Languages: Python, SQL, Bash
+Orchestration: Apache Airflow, dbt
+Streaming: Apache Kafka, Snowpipe
+Cloud/Warehousing: Snowflake, AWS Redshift, S3
+Data Quality: Great Expectations
+Tools: Git, GitHub Actions, Docker, pytest
+Other: Data modeling (star schema, SCD), real-time data, sessionization
