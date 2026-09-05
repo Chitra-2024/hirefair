@@ -1,5 +1,11 @@
 # Pydantic schemas (shared data contracts)
 
+from app.models.candidate import (
+    CandidateProfile,
+    Education,
+    Project,
+    WorkExperience,
+)
 from app.models.job_description import (
     JobRequirement,
     JobRubric,
@@ -8,8 +14,12 @@ from app.models.job_description import (
 )
 
 __all__ = [
+    "CandidateProfile",
+    "Education",
     "JobRequirement",
     "JobRubric",
     "ParsedJobDescription",
+    "Project",
     "RequirementType",
+    "WorkExperience",
 ]
