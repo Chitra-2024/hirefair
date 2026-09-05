@@ -12,14 +12,21 @@ from app.models.job_description import (
     ParsedJobDescription,
     RequirementType,
 )
+from app.models.score import (
+    MatchResult,
+    ScoreRecord,
+)
 
 __all__ = [
     "CandidateProfile",
     "Education",
     "JobRequirement",
     "JobRubric",
+    "MatchResult",
     "ParsedJobDescription",
     "Project",
     "RequirementType",
+    "ScoreRecord",
     "WorkExperience",
 ]
+
