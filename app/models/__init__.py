@@ -1,5 +1,6 @@
 # Pydantic schemas (shared data contracts)
 
+from app.models.audit import AuditRecord
 from app.models.candidate import (
     CandidateProfile,
     Education,
@@ -18,6 +19,7 @@ from app.models.score import (
 )
 
 __all__ = [
+    "AuditRecord",
     "CandidateProfile",
     "Education",
     "JobRequirement",

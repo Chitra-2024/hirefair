@@ -90,20 +90,43 @@ class CandidateProfile(BaseModel):
     def anonymize(self) -> "CandidateProfile":
         """Produce an anonymized copy for counterfactual fairness auditing.
 
-        Strips identity and demographic context fields:
-        - candidate_name: set to None
-        - education institution: set to None
-        - education graduation_year: set to None
+        Strips identity and demographic context from both structured fields and raw_text:
+        - candidate_name: set to None; occurrences in raw_text replaced with [CANDIDATE]
+        - education institution: set to None; occurrences in raw_text replaced with [INSTITUTION]
+        - education graduation_year: set to None; occurrences in raw_text replaced with [YEAR]
 
         Preserves all competency-relevant evidence:
         - skills
         - work experience (titles, companies, durations, descriptions)
         - education degrees and fields of study
         - projects, URLs, and technologies
+        - company names (not anonymized — companies are not identity context)
+
+        Note: raw_text scrubbing uses exact-string replacement of known values.
+        It does not detect indirect references or every possible re-identification path.
         """
         anonymized = self.model_copy(deep=True)
+
+        # Scrub raw_text: replace known identity tokens with placeholders
+        scrubbed = anonymized.raw_text
+
+        # Replace candidate name
+        if anonymized.candidate_name:
+            scrubbed = scrubbed.replace(anonymized.candidate_name, "[CANDIDATE]")
+
+        # Replace institution names and graduation years before zeroing out structured fields
+        for edu in anonymized.education:
+            if edu.institution:
+                scrubbed = scrubbed.replace(edu.institution, "[INSTITUTION]")
+            if edu.graduation_year is not None:
+                scrubbed = scrubbed.replace(str(edu.graduation_year), "[YEAR]")
+
+        anonymized.raw_text = scrubbed
+
+        # Zero out structured identity fields
         anonymized.candidate_name = None
         for edu in anonymized.education:
             edu.institution = None
             edu.graduation_year = None
+
         return anonymized
