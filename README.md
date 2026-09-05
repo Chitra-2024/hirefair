@@ -43,10 +43,28 @@ A LangGraph pipeline connects the agents with a capped self-repair loop — if t
 
 - **Python** — core language
 - **LangGraph** — agent orchestration
-- **OpenAI API** — LLM with structured outputs
+- **Google Gemini API** — LLM with structured outputs (`gemini-2.5-flash` via `google-genai` SDK)
 - **FastAPI** — backend API
 - **SQLite** — persistence
 - **Streamlit** — reviewer interface
+
+### LLM Structured Outputs & Resilience
+
+All agent interactions with Google Gemini are routed through a shared utility (`app/utils/llm_client.py`):
+- **Structured Outputs**: Uses `google-genai` with `response_schema` mapped to Pydantic models, validated on parse.
+- **Rate-Limit Resilience**: Incorporates `tenacity` retries specifically for HTTP 429 (`ClientError` with code 429) using exponential backoff up to 5 attempts. Non-retryable 4xx errors fail immediately.
+- **Provider Choice**: Google Gemini via Google AI Studio's free tier was adopted as a development constraint due to exhausted OpenAI API credits, preserving identical agent behavior and pipeline specifications.
+
+## Environment Setup
+
+1. Configure environment variables in `.env`:
+   ```bash
+   GEMINI_API_KEY=your_google_ai_studio_api_key_here
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Project Structure
 
@@ -58,7 +76,7 @@ HireFair/
 │   ├── db/               # SQLite models and queries
 │   ├── models/           # Pydantic schemas (shared data contracts)
 │   ├── pipeline/         # LangGraph orchestration
-│   └── utils/            # Shared helpers
+│   └── utils/            # Shared helpers (llm_client, etc.)
 ├── frontend/             # Streamlit reviewer interface
 ├── data/                 # Synthetic test data (resumes, job descriptions)
 ├── tests/                # Automated tests
@@ -78,7 +96,7 @@ HireFair/
    Pydantic schemas for rubrics, candidate profiles, scores, and audit results.
 
 3. **Phase 3 — JD Parser Agent**
-   Extract a weighted rubric from a job description using the OpenAI API.
+   Extract a weighted rubric from a job description using Gemini structured outputs.
 
 4. **Phase 4 — Resume Parser Agent**
    Convert resume text into a structured candidate profile.

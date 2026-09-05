@@ -1,4 +1,4 @@
-# Pydantic schemas (shared data contracts)
+"""Rubric data models re-exported for convenience."""
 
 from app.models.job_description import (
     JobRequirement,

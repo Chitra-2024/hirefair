@@ -122,10 +122,13 @@ the candidate may be **re-scored once** using the anonymized profile.
 | ---------------- | --------------------------------------------- |
 | Language         | Python                                        |
 | Orchestration    | LangGraph                                     |
-| LLM Integration  | OpenAI API (structured outputs / function calling) |
+| LLM Integration  | Google Gemini API (`gemini-2.5-flash` via `google-genai` SDK) |
 | Backend API      | FastAPI                                       |
 | Database         | SQLite                                        |
 | Frontend         | Streamlit                                     |
+
+> [!NOTE]
+> **Implementation Note (LLM Provider)**: The system utilizes Google Gemini (`gemini-2.5-flash`) via the `google-genai` SDK and Google AI Studio's free tier. This choice was adopted as a development constraint due to exhausted OpenAI API credits. All LLM calls are routed through a centralized utility (`app/utils/llm_client.py`) using Gemini's `response_schema` alongside Pydantic models for structured outputs, protected by Tenacity retry logic targeting HTTP 429 rate limits (up to 5 attempts with exponential backoff). The core product design, agents, scoring rules, and fairness criteria remain unchanged.
 
 No additional infrastructure (PostgreSQL, Redis, Docker, Kubernetes, cloud services) unless explicitly requested.
 
