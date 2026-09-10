@@ -13,6 +13,12 @@ from app.models.job_description import (
     ParsedJobDescription,
     RequirementType,
 )
+from app.models.result import (
+    CandidateInput,
+    CandidateResult,
+    FailedCandidate,
+    PipelineResult,
+)
 from app.models.score import (
     MatchResult,
     ScoreRecord,
@@ -20,12 +26,16 @@ from app.models.score import (
 
 __all__ = [
     "AuditRecord",
+    "CandidateInput",
     "CandidateProfile",
+    "CandidateResult",
     "Education",
+    "FailedCandidate",
     "JobRequirement",
     "JobRubric",
     "MatchResult",
     "ParsedJobDescription",
+    "PipelineResult",
     "Project",
     "RequirementType",
     "ScoreRecord",
