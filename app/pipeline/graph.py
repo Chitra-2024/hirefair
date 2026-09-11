@@ -160,6 +160,7 @@ def run_pipeline(
             results.append(
                 CandidateResult(
                     candidate_id=final_state.get("candidate_id", cid),
+                    candidate_profile=final_state["candidate_profile"],
                     scores=scores,
                     audit_record=final_state["audit_record"],
                 )

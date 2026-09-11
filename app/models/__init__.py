@@ -19,6 +19,11 @@ from app.models.result import (
     FailedCandidate,
     PipelineResult,
 )
+from app.models.routing import (
+    RouteDecision,
+    RoutingDecision,
+    RoutingResult,
+)
 from app.models.score import (
     MatchResult,
     ScoreRecord,
@@ -38,6 +43,9 @@ __all__ = [
     "PipelineResult",
     "Project",
     "RequirementType",
+    "RouteDecision",
+    "RoutingDecision",
+    "RoutingResult",
     "ScoreRecord",
     "WorkExperience",
 ]

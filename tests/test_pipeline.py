@@ -214,10 +214,11 @@ def test_state_accumulation(sample_rubric: ParsedJobDescription):
         # Verify MatchResult reached Auditor
         assert auditor_received["original_result"] == match_res
 
-        # Verify final result contains the unwrapped scores and audit_record
+        # Verify final result contains the unwrapped scores, audit_record, and candidate_profile
         assert len(result.results) == 1
         cand_result = result.results[0]
         assert cand_result.candidate_id == "cand_accum"
+        assert cand_result.candidate_profile == profile
         assert cand_result.scores == match_res.scores
         assert cand_result.audit_record == audit_rec
 
@@ -401,6 +402,8 @@ def test_candidate_result_contract(sample_rubric: ParsedJobDescription):
         cand_result = result.results[0]
         assert isinstance(cand_result, CandidateResult)
         assert cand_result.candidate_id == "cand_contract"
+        assert isinstance(cand_result.candidate_profile, CandidateProfile)
+        assert cand_result.candidate_profile.candidate_id == "cand_contract"
         assert isinstance(cand_result.scores, list)
         assert all(isinstance(s, ScoreRecord) for s in cand_result.scores)
         assert len(cand_result.scores) == 2

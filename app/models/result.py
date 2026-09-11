@@ -4,6 +4,7 @@ from typing import List
 from pydantic import BaseModel, Field
 
 from app.models.audit import AuditRecord
+from app.models.candidate import CandidateProfile
 from app.models.score import ScoreRecord
 
 
@@ -25,10 +26,12 @@ class CandidateResult(BaseModel):
     """Evaluation result for a single candidate that completed the pipeline.
 
     Downstream consumers (such as the Router) inspect the unwrapped ScoreRecord
-    list directly without relying on internal agent batching wrappers.
+    list, candidate_profile, and audit_record directly without relying on internal
+    agent batching wrappers.
     """
 
     candidate_id: str
+    candidate_profile: CandidateProfile
     scores: List[ScoreRecord]
     audit_record: AuditRecord
 
