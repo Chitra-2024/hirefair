@@ -66,6 +66,29 @@ All agent interactions with Google Gemini are routed through a shared utility (`
    pip install -r requirements.txt
    ```
 
+## Running the Application
+
+### 1. Start the FastAPI Backend
+```bash
+uvicorn app.api.main:app --reload
+```
+The API serves interactive documentation at `http://127.0.0.1:8000/docs` and exposes:
+- `GET /health`: Minimal server liveness check.
+- `POST /screen`: Synchronous candidate screening from multipart `.txt` file uploads.
+
+### 2. Start the Streamlit Frontend
+```bash
+streamlit run frontend/app.py
+```
+The Streamlit app connects to the FastAPI backend over HTTP using `requests`.
+
+### Phase 9 Implementation Choices
+- **Synchronous /screen execution**: Requests are processed synchronously in memory without background job queues or polling infrastructure.
+- **.txt-only uploads**: Plain text files only are accepted for job descriptions and resumes (PDF parsing is out of scope).
+- **In-memory processing**: Uploaded files are read and processed entirely in memory; nothing is written to disk.
+- **Decoupled HTTP boundary**: Streamlit communicates strictly via HTTP requests and never imports FastAPI or pipeline modules directly.
+- **Testing scope**: Automated tests focus on the FastAPI boundary with `TestClient` (100% offline, zero Gemini calls); automated Streamlit UI tests are out of scope.
+
 ## Project Structure
 
 ```

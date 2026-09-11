@@ -1,5 +1,7 @@
-# Pydantic schemas (shared data contracts)
-
+from app.models.api import (
+    CandidateDecisionResponse,
+    ScreenResponse,
+)
 from app.models.audit import AuditRecord
 from app.models.candidate import (
     CandidateProfile,
@@ -31,6 +33,7 @@ from app.models.score import (
 
 __all__ = [
     "AuditRecord",
+    "CandidateDecisionResponse",
     "CandidateInput",
     "CandidateProfile",
     "CandidateResult",
@@ -47,6 +50,7 @@ __all__ = [
     "RoutingDecision",
     "RoutingResult",
     "ScoreRecord",
+    "ScreenResponse",
     "WorkExperience",
 ]
 
