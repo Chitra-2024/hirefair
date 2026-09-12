@@ -1,0 +1,52 @@
+ELENA VASQUEZ
+elena.vasquez@mailnova.com | (512) 555-0147 | Austin, TX | linkedin.com/in/elenavasquez
+
+SUMMARY
+Senior Data Engineer with 6 years of experience designing and operating large-scale data pipelines in cloud environments. Proven track record of building reliable ETL systems processing billions of records daily. Passionate about data quality, pipeline observability, and clean engineering practices.
+
+EXPERIENCE
+
+Senior Data Engineer
+Crestline Data Systems — Austin, TX
+March 2022 – Present
+
+- Architected and maintain a suite of 40+ Apache Airflow DAGs processing over 3 billion records daily from 12 upstream data sources into Snowflake.
+- Designed a star-schema data model for the company's core analytics warehouse, including slowly changing dimension (SCD Type 2) tables for customer and product entities.
+- Built a custom data quality framework in Python that validates row counts, schema conformance, freshness, and statistical distributions, reducing undetected data issues by 78%.
+- Implemented CI/CD pipelines for Airflow DAGs using GitHub Actions, including automated DAG validation tests and staging environment deployment.
+- Led migration of legacy Redshift warehouse to Snowflake, including query optimization that reduced average dashboard query time from 45 seconds to 3 seconds.
+- Collaborated with the ML team to build and maintain feature pipelines that feed a real-time customer churn prediction model.
+- Mentored two junior data engineers through onboarding and first-quarter project delivery.
+
+Data Engineer
+Broadleaf Technologies — Dallas, TX
+June 2019 – February 2022
+
+- Developed Python-based ETL pipelines ingesting data from REST APIs, SFTP servers, and relational databases into a Redshift data warehouse.
+- Wrote complex SQL transformations including multi-level CTEs, window functions for sessionization, and incremental load patterns.
+- Managed Airflow deployment on AWS, including DAG development, connection management, and monitoring setup using CloudWatch.
+- Introduced Great Expectations as a data validation layer, catching 15+ production data issues in the first quarter of deployment.
+- Participated in cross-functional data modeling sessions with product analytics and finance teams.
+
+Data Analyst
+Quartzline Media — Dallas, TX
+January 2018 – May 2019
+
+- Built automated reporting pipelines in Python (pandas, SQLAlchemy) replacing manual Excel-based workflows.
+- Wrote SQL queries for ad-hoc analysis and recurring dashboards in Looker.
+- Created documentation for data definitions and lineage across 30+ reporting tables.
+
+EDUCATION
+
+B.S. Computer Science
+University of Texas at Dallas — Richardson, TX
+Graduated May 2017
+
+TECHNICAL SKILLS
+
+Languages: Python, SQL, Bash
+Orchestration: Apache Airflow
+Cloud/Warehousing: Snowflake, AWS Redshift, S3
+Data Quality: Great Expectations, custom Python frameworks
+Tools: Git, GitHub Actions, Docker, Terraform, dbt
+Other: Data modeling (star schema, SCD), REST APIs, pandas, SQLAlchemy
