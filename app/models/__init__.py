@@ -26,6 +26,10 @@ from app.models.routing import (
     RoutingDecision,
     RoutingResult,
 )
+from app.models.scheduling import (
+    SchedulingResult,
+    SchedulingStatus,
+)
 from app.models.score import (
     MatchResult,
     ScoreRecord,
@@ -49,6 +53,8 @@ __all__ = [
     "RouteDecision",
     "RoutingDecision",
     "RoutingResult",
+    "SchedulingResult",
+    "SchedulingStatus",
     "ScoreRecord",
     "ScreenResponse",
     "WorkExperience",
