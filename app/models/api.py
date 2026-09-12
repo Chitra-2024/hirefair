@@ -10,11 +10,14 @@ from app.models.routing import RouteDecision, RoutingDecision
 from app.models.score import ScoreRecord
 
 
+from app.models.scheduling import SchedulingResult
+
+
 class CandidateDecisionResponse(BaseModel):
     """Screening outcome for a single processed candidate.
 
-    Surfaces the decision, reason, score, and original profile/audit context
-    needed for auto-scheduling and human review.
+    Surfaces the decision, reason, score, original profile/audit context,
+    and interview scheduling outcome.
     """
 
     candidate_id: str
@@ -25,10 +28,15 @@ class CandidateDecisionResponse(BaseModel):
     candidate_profile: Optional[CandidateProfile] = None
     scores: List[ScoreRecord] = Field(default_factory=list)
     audit_record: Optional[AuditRecord] = None
+    scheduling_result: Optional[SchedulingResult] = None
 
     @classmethod
-    def from_route_decision(cls, decision: RouteDecision) -> "CandidateDecisionResponse":
-        """Construct response from an internal RouteDecision object."""
+    def from_route_decision(
+        cls,
+        decision: RouteDecision,
+        scheduling_result: Optional[SchedulingResult] = None,
+    ) -> "CandidateDecisionResponse":
+        """Construct response from an internal RouteDecision object and optional scheduling result."""
         cand_res = decision.candidate_result
         return cls(
             candidate_id=decision.candidate_id,
@@ -39,6 +47,7 @@ class CandidateDecisionResponse(BaseModel):
             candidate_profile=cand_res.candidate_profile if cand_res else None,
             scores=cand_res.scores if cand_res else [],
             audit_record=cand_res.audit_record if cand_res else None,
+            scheduling_result=scheduling_result,
         )
 
 

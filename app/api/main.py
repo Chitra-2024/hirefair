@@ -9,15 +9,18 @@ Locked Phase 9 implementation decisions:
 - Secure error handling: Does not expose internal stack traces to the API client.
 """
 
+from datetime import datetime, timezone
 import logging
 from pathlib import Path
-from typing import List
+from typing import List, Optional
 
-from fastapi import FastAPI, File, HTTPException, UploadFile, status
+from fastapi import FastAPI, File, HTTPException, Query, UploadFile, status
 
 from app.api.service import screen_documents
 from app.models.api import CandidateDecisionResponse, ScreenResponse
 from app.models.result import CandidateInput
+from app.scheduling.calendar import MockCalendar
+from app.scheduling.scheduler import InterviewScheduler
 
 logger = logging.getLogger("hirefair.api")
 
@@ -26,6 +29,17 @@ app = FastAPI(
     description="Fairness-Aware Resume Screening & Interview Scheduling Agent",
     version="0.1.0",
 )
+
+# App-level calendar and scheduler singletons (in-memory, persists across requests)
+calendar = MockCalendar()
+scheduler = InterviewScheduler(calendar=calendar)
+app.state.calendar = calendar
+app.state.scheduler = scheduler
+
+
+def get_current_reference_time() -> datetime:
+    """Return the current time in UTC with timezone awareness."""
+    return datetime.now(timezone.utc)
 
 
 @app.get("/health", status_code=status.HTTP_200_OK)
@@ -43,6 +57,10 @@ def health_check() -> dict:
 async def screen_candidates(
     job_description: UploadFile = File(..., description="Job description text file (.txt only)"),
     resumes: List[UploadFile] = File(..., description="Candidate resume text files (.txt only)"),
+    reference_time: Optional[datetime] = Query(
+        default=None,
+        description="Optional timezone-aware UTC reference time for interview scheduling",
+    ),
 ) -> ScreenResponse:
     """Screen candidate resumes synchronously through the HireFair pipeline and Router.
 
@@ -52,6 +70,11 @@ async def screen_candidates(
 
     Returns a flat list of candidate routing decisions and any pipeline failures.
     """
+    # 0. Obtain one timezone-aware UTC reference_time for the entire request
+    ref_time = reference_time or get_current_reference_time()
+    if ref_time.tzinfo is None or ref_time.tzinfo.utcoffset(ref_time) is None:
+        ref_time = ref_time.replace(tzinfo=timezone.utc)
+
     # 1. Validate job description file extension
     if not job_description.filename or not job_description.filename.lower().endswith(".txt"):
         raise HTTPException(
@@ -122,11 +145,20 @@ async def screen_candidates(
             detail="An error occurred during candidate screening.",
         )
 
-    # 6. Format flat API response preserving all decisions, scores, and audit records
-    decision_responses = [
-        CandidateDecisionResponse.from_route_decision(d)
-        for d in routing_result.routed_candidates
-    ]
+    # 6. Apply interview scheduling policy to routed candidates in input order
+    decision_responses: List[CandidateDecisionResponse] = []
+    for d in routing_result.routed_candidates:
+        sched_res = scheduler.schedule_candidate(
+            routing_result=routing_result,
+            candidate_id=d.candidate_id,
+            reference_time=ref_time,
+        )
+        decision_responses.append(
+            CandidateDecisionResponse.from_route_decision(
+                decision=d,
+                scheduling_result=sched_res,
+            )
+        )
 
     return ScreenResponse(
         results=decision_responses,

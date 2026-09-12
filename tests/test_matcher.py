@@ -174,7 +174,7 @@ def test_matcher_passes_response_model_and_default_model(
     sample_rubric: ParsedJobDescription,
     sample_match_result: MatchResult,
 ):
-    """Verify that Matcher calls generate_structured with MatchResult and default model gemini-2.5-flash."""
+    """Verify that Matcher calls generate_structured with MatchResult and default model gemini-3.6-flash."""
     with patch("app.agents.matcher.generate_structured") as mock_generate:
         mock_generate.return_value = sample_match_result
 
@@ -187,8 +187,8 @@ def test_matcher_passes_response_model_and_default_model(
         # Verify response_model is MatchResult
         assert call_kwargs["response_model"] is MatchResult
 
-        # Verify model is default gemini-2.5-flash
-        assert call_kwargs["model"] == "gemini-2.5-flash"
+        # Verify model is default gemini-3.6-flash
+        assert call_kwargs["model"] == "gemini-3.6-flash"
         assert call_kwargs["model"] == DEFAULT_MODEL
 
         # Verify system prompt
@@ -454,4 +454,4 @@ def test_match_candidate_convenience_function(
         assert isinstance(result, MatchResult)
         assert len(result.scores) == 3
         assert mock_generate.called
-        assert mock_generate.call_args.kwargs["model"] == "gemini-2.5-flash"
+        assert mock_generate.call_args.kwargs["model"] == "gemini-3.6-flash"

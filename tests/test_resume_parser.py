@@ -155,7 +155,7 @@ def test_resume_parser_passes_response_model_and_default_model(
         call_kwargs = mock_generate.call_args.kwargs
 
         # Verify model selection: default Gemini model
-        assert call_kwargs["model"] == "gemini-2.5-flash"
+        assert call_kwargs["model"] == "gemini-3.6-flash"
         assert call_kwargs["model"] == DEFAULT_MODEL
 
         # Verify response_model is CandidateProfile
@@ -249,7 +249,7 @@ def test_parse_resume_convenience_function(
         assert result.candidate_id == "elena_vasquez"
         assert result.raw_text == sample_resume_text
         assert mock_generate.called
-        assert mock_generate.call_args.kwargs["model"] == "gemini-2.5-flash"
+        assert mock_generate.call_args.kwargs["model"] == "gemini-3.6-flash"
 
 
 def test_resume_parser_custom_model(

@@ -3,7 +3,7 @@
 from app.models.job_description import ParsedJobDescription
 from app.utils.llm_client import generate_structured
 
-DEFAULT_MODEL = "gemini-2.5-flash"
+DEFAULT_MODEL = "gemini-3.6-flash"
 
 JD_PARSER_SYSTEM_PROMPT = """You are an expert HR and technical recruiting rubric extractor for HireFair, a fairness-aware resume screening system.
 

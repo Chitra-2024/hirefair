@@ -180,7 +180,7 @@ class FairnessAuditor:
       Check C — Non-traditional evidence detection for under-scored criteria.
     """
 
-    def __init__(self, model: str = "gemini-2.5-flash"):
+    def __init__(self, model: str = "gemini-3.6-flash"):
         self.model = model
         self._matcher = Matcher(model=model)
 
@@ -329,7 +329,7 @@ def audit_candidate(
     candidate: CandidateProfile,
     rubric: ParsedJobDescription,
     original_result: MatchResult,
-    model: str = "gemini-2.5-flash",
+    model: str = "gemini-3.6-flash",
 ) -> AuditRecord:
     """Convenience functional wrapper around FairnessAuditor."""
     auditor = FairnessAuditor(model=model)

@@ -6,7 +6,7 @@ from app.models.job_description import ParsedJobDescription
 from app.models.score import MatchResult, ScoreRecord
 from app.utils.llm_client import generate_structured
 
-DEFAULT_MODEL = "gemini-2.5-flash"
+DEFAULT_MODEL = "gemini-3.6-flash"
 
 MATCHER_SYSTEM_PROMPT = """You are an expert technical evaluator and Matcher agent for HireFair, a fairness-aware resume screening system.
 

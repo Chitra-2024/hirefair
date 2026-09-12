@@ -39,7 +39,7 @@ def generate_structured(
     prompt: str,
     system: str,
     response_model: Type[BaseModel],
-    model: str = "gemini-2.5-flash",
+    model: str = "gemini-3.6-flash",
 ) -> BaseModel:
     """Generate structured output validated against a Pydantic model using Gemini.
 
@@ -47,7 +47,7 @@ def generate_structured(
         prompt: User input prompt / content for the model.
         system: System instruction guiding the model behavior.
         response_model: Pydantic model class for schema constraint and validation.
-        model: Model identifier (default: gemini-2.5-flash).
+        model: Model identifier (default: gemini-3.6-flash).
 
     Returns:
         An instance of response_model populated from the parsed JSON.

@@ -49,7 +49,7 @@ class CitationCheckBatch(BaseModel):
 def check_citations(
     score_records: List[ScoreRecord],
     rubric_descriptions: dict,
-    model: str = "gemini-2.5-flash",
+    model: str = "gemini-3.6-flash",
 ) -> CitationCheckBatch:
     """Run LLM-based citation validity checks for all applicable score records.
 
