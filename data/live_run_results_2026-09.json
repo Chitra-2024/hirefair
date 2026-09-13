@@ -1,0 +1,271 @@
+{
+  "metadata": {
+    "run_timestamp": "2026-09-13T13:14:26+05:30",
+    "model": "gemini-3.5-flash-lite",
+    "job_description": "job_description.txt",
+    "total_candidates": 24,
+    "successful_candidates": 24,
+    "failed_candidates": 0,
+    "total_gemini_calls": 97,
+    "jd_parser_calls": 1,
+    "pipeline_calls": 96,
+    "repair_calls": 0,
+    "router_calls": 0,
+    "total_runtime_seconds": 776.05,
+    "total_runtime_minutes": 12.93,
+    "api_errors": 0,
+    "rate_limit_429s": 0,
+    "evidence_validator_fallback_triggered": false
+  },
+  "summary_by_decision": {
+    "cleared": 2,
+    "flagged_for_review": 16,
+    "incomplete_data": 4,
+    "duplicate": 2,
+    "not_qualified": 0
+  },
+  "candidates": [
+    {
+      "candidate_id": "aisha_johnson",
+      "routing_decision": "flagged_for_review",
+      "category": "flagged_for_review",
+      "final_score": 0.300,
+      "flagged_reason": "Citation validity failure on specialized data engineering criteria; counterfactual delta detected",
+      "citation_valid": false,
+      "counterfactual_delta_detected": true,
+      "non_traditional_evidence_found": false
+    },
+    {
+      "candidate_id": "alex_rivera",
+      "routing_decision": "flagged_for_review",
+      "category": "flagged_for_review",
+      "final_score": 0.580,
+      "flagged_reason": "Citation validity failure on advanced infrastructure criteria",
+      "citation_valid": false,
+      "counterfactual_delta_detected": false,
+      "non_traditional_evidence_found": false
+    },
+    {
+      "candidate_id": "amara_nwosu",
+      "routing_decision": "flagged_for_review",
+      "category": "flagged_for_review",
+      "final_score": 0.520,
+      "flagged_reason": "Non-traditional competency evidence detected in personal project (policy-data-pipeline); counterfactual score delta detected",
+      "citation_valid": true,
+      "counterfactual_delta_detected": true,
+      "non_traditional_evidence_found": true
+    },
+    {
+      "candidate_id": "benjamin_tran",
+      "routing_decision": "cleared",
+      "category": "cleared",
+      "final_score": 0.880,
+      "flagged_reason": null,
+      "citation_valid": true,
+      "counterfactual_delta_detected": false,
+      "non_traditional_evidence_found": false
+    },
+    {
+      "candidate_id": "carlos_medina",
+      "routing_decision": "flagged_for_review",
+      "category": "flagged_for_review",
+      "final_score": 0.650,
+      "flagged_reason": "Large counterfactual score delta detected across rubric criteria",
+      "citation_valid": true,
+      "counterfactual_delta_detected": true,
+      "non_traditional_evidence_found": false
+    },
+    {
+      "candidate_id": "daniel_yeboah",
+      "routing_decision": "flagged_for_review",
+      "category": "flagged_for_review",
+      "final_score": 0.620,
+      "flagged_reason": "Large counterfactual score delta detected across rubric criteria",
+      "citation_valid": true,
+      "counterfactual_delta_detected": true,
+      "non_traditional_evidence_found": false
+    },
+    {
+      "candidate_id": "devon_morales",
+      "routing_decision": "incomplete_data",
+      "category": "incomplete_data",
+      "final_score": null,
+      "flagged_reason": "Work experience missing duration_months",
+      "citation_valid": null,
+      "counterfactual_delta_detected": null,
+      "non_traditional_evidence_found": null
+    },
+    {
+      "candidate_id": "elena_vasquez",
+      "routing_decision": "duplicate",
+      "category": "duplicate",
+      "final_score": null,
+      "duplicate_of": "elena_vasquez_copy",
+      "flagged_reason": "Duplicate candidate profile detected (matching name and resume content with elena_vasquez_copy)",
+      "citation_valid": null,
+      "counterfactual_delta_detected": null,
+      "non_traditional_evidence_found": null
+    },
+    {
+      "candidate_id": "elena_vasquez_copy",
+      "routing_decision": "duplicate",
+      "category": "duplicate",
+      "final_score": null,
+      "duplicate_of": "elena_vasquez",
+      "flagged_reason": "Duplicate candidate profile detected (matching name and resume content with elena_vasquez)",
+      "citation_valid": null,
+      "counterfactual_delta_detected": null,
+      "non_traditional_evidence_found": null
+    },
+    {
+      "candidate_id": "fatima_al-rashidi",
+      "routing_decision": "flagged_for_review",
+      "category": "flagged_for_review",
+      "final_score": 0.510,
+      "flagged_reason": "Citation validity failure on data platform criteria; counterfactual delta detected",
+      "citation_valid": false,
+      "counterfactual_delta_detected": true,
+      "non_traditional_evidence_found": false
+    },
+    {
+      "candidate_id": "hannah_eriksen",
+      "routing_decision": "flagged_for_review",
+      "category": "flagged_for_review",
+      "final_score": 0.440,
+      "flagged_reason": "Citation validity failure on core warehouse criteria",
+      "citation_valid": false,
+      "counterfactual_delta_detected": false,
+      "non_traditional_evidence_found": false
+    },
+    {
+      "candidate_id": "james_okafor",
+      "routing_decision": "flagged_for_review",
+      "category": "flagged_for_review",
+      "final_score": 0.690,
+      "flagged_reason": "Large counterfactual score delta detected across rubric criteria",
+      "citation_valid": true,
+      "counterfactual_delta_detected": true,
+      "non_traditional_evidence_found": false
+    },
+    {
+      "candidate_id": "kieran_walsh",
+      "routing_decision": "flagged_for_review",
+      "category": "flagged_for_review",
+      "final_score": 0.540,
+      "flagged_reason": "Non-traditional competency evidence detected in open-source projects (kwdataeng/airflow-dq-plugin)",
+      "citation_valid": true,
+      "counterfactual_delta_detected": false,
+      "non_traditional_evidence_found": true
+    },
+    {
+      "candidate_id": "laura_petrov",
+      "routing_decision": "flagged_for_review",
+      "category": "flagged_for_review",
+      "final_score": 0.480,
+      "flagged_reason": "Citation validity failure on ETL orchestration criteria",
+      "citation_valid": false,
+      "counterfactual_delta_detected": false,
+      "non_traditional_evidence_found": false
+    },
+    {
+      "candidate_id": "marcus_chen",
+      "routing_decision": "flagged_for_review",
+      "category": "flagged_for_review",
+      "final_score": 0.760,
+      "flagged_reason": "Large counterfactual score delta detected between named and anonymized profiles",
+      "citation_valid": true,
+      "counterfactual_delta_detected": true,
+      "non_traditional_evidence_found": false
+    },
+    {
+      "candidate_id": "megan_doyle",
+      "routing_decision": "flagged_for_review",
+      "category": "flagged_for_review",
+      "final_score": 0.460,
+      "flagged_reason": "Citation validity failure on data modeling criteria",
+      "citation_valid": false,
+      "counterfactual_delta_detected": false,
+      "non_traditional_evidence_found": false
+    },
+    {
+      "candidate_id": "nathaniel_brooks",
+      "routing_decision": "incomplete_data",
+      "category": "incomplete_data",
+      "final_score": null,
+      "flagged_reason": "Work experience missing duration_months (no employment dates provided in resume)",
+      "citation_valid": null,
+      "counterfactual_delta_detected": null,
+      "non_traditional_evidence_found": null
+    },
+    {
+      "candidate_id": "nina_kozlova",
+      "routing_decision": "incomplete_data",
+      "category": "incomplete_data",
+      "final_score": null,
+      "flagged_reason": "Work experience missing duration_months",
+      "citation_valid": null,
+      "counterfactual_delta_detected": null,
+      "non_traditional_evidence_found": null
+    },
+    {
+      "candidate_id": "olivia_santos",
+      "routing_decision": "flagged_for_review",
+      "category": "flagged_for_review",
+      "final_score": 0.420,
+      "flagged_reason": "Citation validity failure on streaming data criteria; counterfactual delta detected",
+      "citation_valid": false,
+      "counterfactual_delta_detected": true,
+      "non_traditional_evidence_found": false
+    },
+    {
+      "candidate_id": "priya_ramaswamy",
+      "routing_decision": "flagged_for_review",
+      "category": "flagged_for_review",
+      "final_score": 0.740,
+      "flagged_reason": "Large counterfactual score delta detected between named and anonymized profiles",
+      "citation_valid": true,
+      "counterfactual_delta_detected": true,
+      "non_traditional_evidence_found": false
+    },
+    {
+      "candidate_id": "ryan_kowalski",
+      "routing_decision": "flagged_for_review",
+      "category": "flagged_for_review",
+      "final_score": 0.490,
+      "flagged_reason": "Citation validity failure on cloud data warehouse criteria",
+      "citation_valid": false,
+      "counterfactual_delta_detected": false,
+      "non_traditional_evidence_found": false
+    },
+    {
+      "candidate_id": "samuel_petersen",
+      "routing_decision": "flagged_for_review",
+      "category": "flagged_for_review",
+      "final_score": 0.450,
+      "flagged_reason": "Citation validity failure on data pipeline scaling criteria",
+      "citation_valid": false,
+      "counterfactual_delta_detected": false,
+      "non_traditional_evidence_found": false
+    },
+    {
+      "candidate_id": "sarah_lindqvist",
+      "routing_decision": "cleared",
+      "category": "cleared",
+      "final_score": 0.850,
+      "flagged_reason": null,
+      "citation_valid": true,
+      "counterfactual_delta_detected": false,
+      "non_traditional_evidence_found": false
+    },
+    {
+      "candidate_id": "tomoko_ishikawa",
+      "routing_decision": "incomplete_data",
+      "category": "incomplete_data",
+      "final_score": null,
+      "flagged_reason": "Work experience missing duration_months on consulting engagements",
+      "citation_valid": null,
+      "counterfactual_delta_detected": null,
+      "non_traditional_evidence_found": null
+    }
+  ]
+}

@@ -4,7 +4,7 @@ from typing import Optional
 from app.models.candidate import CandidateProfile
 from app.utils.llm_client import generate_structured
 
-DEFAULT_MODEL = "gemini-3.6-flash"
+DEFAULT_MODEL = "gemini-3.5-flash-lite"
 
 RESUME_PARSER_SYSTEM_PROMPT = """You are an expert HR and technical resume parser for HireFair, a fairness-aware resume screening system.
 

@@ -122,13 +122,13 @@ the pipeline applies **Option A**: it adopts the already-computed anonymized agg
 | ---------------- | ------------------------------------------------------------------- |
 | Language         | Python                                                              |
 | Orchestration    | LangGraph                                                           |
-| LLM Integration  | Google Gemini API (`gemini-3.6-flash` via `google-genai` SDK)       |
+| LLM Integration  | Google Gemini API (`gemini-3.5-flash-lite` via `google-genai` SDK)  |
 | Backend API      | FastAPI                                                             |
 | Database         | SQLite *(deferred — v1 uses in-memory state only)*                  |
 | Frontend         | Streamlit                                                           |
 
 > [!NOTE]
-> **LLM Provider**: The system uses `gemini-3.6-flash` via the `google-genai` SDK and Google AI Studio's free tier. All LLM calls are routed through `app/utils/llm_client.py` using Gemini's `response_schema` alongside Pydantic models for structured outputs, protected by Tenacity retry logic targeting HTTP 429 rate limits (up to 5 attempts with exponential backoff). The model was migrated from `gemini-2.5-flash` to `gemini-3.6-flash` because `gemini-2.5-flash` was no longer available to new users. The core product design, agents, scoring rules, and fairness criteria remain unchanged.
+> **LLM Provider**: The system uses `gemini-3.5-flash-lite` via the `google-genai` SDK and Google AI Studio's free tier. All LLM calls are routed through `app/utils/llm_client.py` using Gemini's `response_schema` alongside Pydantic models for structured outputs, protected by Tenacity retry logic targeting HTTP 429 rate limits (up to 5 attempts with exponential backoff). The core product design, agents, scoring rules, and fairness criteria remain unchanged.
 
 > [!NOTE]
 > **Persistence**: SQLite persistence is deferred. All state in v1 — routing decisions, audit records, and calendar bookings — is held in memory for the lifetime of the FastAPI process.

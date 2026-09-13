@@ -67,12 +67,12 @@ A Streamlit frontend (`frontend/app.py`) connects to the FastAPI backend over HT
 | --------------- | ---------------------------------------------------------------------------- |
 | Language        | Python                                                                       |
 | Orchestration   | LangGraph                                                                    |
-| LLM Integration | Google Gemini (`gemini-3.6-flash` via `google-genai` SDK)                   |
+| LLM Integration | Google Gemini (`gemini-3.5-flash-lite` via `google-genai` SDK)              |
 | Backend API     | FastAPI                                                                      |
 | Frontend        | Streamlit                                                                    |
 
 > [!NOTE]
-> **LLM Provider**: All Gemini calls are routed through `app/utils/llm_client.py` using `response_schema` with Pydantic models for structured outputs, protected by Tenacity retry logic targeting HTTP 429 rate limits (up to 5 attempts with exponential backoff). The model was updated from `gemini-2.5-flash` to `gemini-3.6-flash` because `gemini-2.5-flash` was no longer available to new users.
+> **LLM Provider**: All Gemini calls are routed through `app/utils/llm_client.py` using `response_schema` with Pydantic models for structured outputs, protected by Tenacity retry logic targeting HTTP 429 rate limits (up to 5 attempts with exponential backoff). The active model is `gemini-3.5-flash-lite`.
 
 > [!NOTE]
 > **No database**: SQLite persistence is deferred. All state — scoring results, routing decisions, and calendar bookings — is held in memory for the lifetime of the FastAPI process.
