@@ -109,26 +109,29 @@ If the fairness audit finds **both**:
 1. A significant counterfactual score discrepancy, **and**
 2. A failed citation check,
 
-the candidate may be **re-scored once** using the anonymized profile.
+the pipeline applies **Option A**: it adopts the already-computed anonymized aggregate score as the final score (`repair_applied=True`). **No second Gemini/Matcher call is made.** The anonymized score has already been computed during Check A (counterfactual re-scoring), so a second identical call would consume quota without providing a meaningfully different signal.
 
-- The repair loop is capped at exactly **one retry per candidate**.
+- The repair is capped at exactly **one application per candidate**.
 - It must **never loop indefinitely**.
 
 ---
 
 ## Technology Stack
 
-| Layer            | Technology                                    |
-| ---------------- | --------------------------------------------- |
-| Language         | Python                                        |
-| Orchestration    | LangGraph                                     |
-| LLM Integration  | Google Gemini API (`gemini-2.5-flash` via `google-genai` SDK) |
-| Backend API      | FastAPI                                       |
-| Database         | SQLite                                        |
-| Frontend         | Streamlit                                     |
+| Layer            | Technology                                                          |
+| ---------------- | ------------------------------------------------------------------- |
+| Language         | Python                                                              |
+| Orchestration    | LangGraph                                                           |
+| LLM Integration  | Google Gemini API (`gemini-3.6-flash` via `google-genai` SDK)       |
+| Backend API      | FastAPI                                                             |
+| Database         | SQLite *(deferred — v1 uses in-memory state only)*                  |
+| Frontend         | Streamlit                                                           |
 
 > [!NOTE]
-> **Implementation Note (LLM Provider)**: The system utilizes Google Gemini (`gemini-2.5-flash`) via the `google-genai` SDK and Google AI Studio's free tier. This choice was adopted as a development constraint due to exhausted OpenAI API credits. All LLM calls are routed through a centralized utility (`app/utils/llm_client.py`) using Gemini's `response_schema` alongside Pydantic models for structured outputs, protected by Tenacity retry logic targeting HTTP 429 rate limits (up to 5 attempts with exponential backoff). The core product design, agents, scoring rules, and fairness criteria remain unchanged.
+> **LLM Provider**: The system uses `gemini-3.6-flash` via the `google-genai` SDK and Google AI Studio's free tier. All LLM calls are routed through `app/utils/llm_client.py` using Gemini's `response_schema` alongside Pydantic models for structured outputs, protected by Tenacity retry logic targeting HTTP 429 rate limits (up to 5 attempts with exponential backoff). The model was migrated from `gemini-2.5-flash` to `gemini-3.6-flash` because `gemini-2.5-flash` was no longer available to new users. The core product design, agents, scoring rules, and fairness criteria remain unchanged.
+
+> [!NOTE]
+> **Persistence**: SQLite persistence is deferred. All state in v1 — routing decisions, audit records, and calendar bookings — is held in memory for the lifetime of the FastAPI process.
 
 No additional infrastructure (PostgreSQL, Redis, Docker, Kubernetes, cloud services) unless explicitly requested.
 
@@ -142,7 +145,7 @@ No additional infrastructure (PostgreSQL, Redis, Docker, Kubernetes, cloud servi
 - Fairness Auditor
 - Router
 - LangGraph orchestration
-- SQLite persistence
+- SQLite persistence *(deferred — not implemented in v1)*
 - FastAPI backend
 - Streamlit reviewer interface
 - Synthetic test data
@@ -150,9 +153,24 @@ No additional infrastructure (PostgreSQL, Redis, Docker, Kubernetes, cloud servi
 
 ---
 
-## Extended Scope (Future)
+## Extended Scope
 
-- Mock calendar scheduling connector.
-- 48-hour fallback when no immediate scheduling slot is available.
-- Duplicate application detection.
-- Polished demo scenarios.
+The following were originally listed as future features and are **implemented in v1**:
+
+- **Mock calendar scheduling connector** — `MockCalendar` + `InterviewScheduler` in `app/scheduling/`.
+- **48-hour window scheduling** — strict half-open window `[reference_time, reference_time + 48h)` enforced by `MockCalendar`.
+- **Duplicate application detection** — text-similarity and name-match heuristics in the Router.
+- **Demo scenarios** — synthetic resume dataset covers CLEARED, FLAGGED, INCOMPLETE_DATA, DUPLICATE, and no-availability cases.
+
+---
+
+## v1 Implementation Thresholds
+
+These values are **v1 implementation choices** — named constants in the source code, not specified by this design document. They can be tuned.
+
+| Threshold                                           | Value              | Constant / Location                                    |
+| --------------------------------------------------- | ------------------ | ------------------------------------------------------ |
+| Counterfactual delta (triggers repair consideration) | `0.15`            | `COUNTERFACTUAL_DELTA_THRESHOLD` in `fairness_auditor.py` |
+| Qualification floor (overall weighted score)        | `>= 0.50`         | `QUALIFICATION_THRESHOLD` in `router_config.py`        |
+| Must-have criterion floor                           | `>= 0.30`         | `MIN_MUST_HAVE_SCORE` in `router_config.py`            |
+| Non-traditional evidence surfacing threshold        | `<= 0.50` score   | `NON_TRADITIONAL_SCORE_THRESHOLD` in `fairness_auditor.py` |
